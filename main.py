@@ -1,4 +1,4 @@
-from src.models.feature_extraction import FeatureExtraction
+from src.pipeline.extract_features import extract_features
 from src.data.preprocess import DataPreprocess
 from src.utils.file_handling import csv_to_json
 import spacy
@@ -16,9 +16,7 @@ preprocess.start()
 print('Done')
 
 print('Start feature extraction...')
-featex = FeatureExtraction(data, nlp)
 with open(path, 'r') as f:
     data = json.load(f)
-    # print(featex.start())
-    featex.start()
+    featex = extract_features(data)
 print('Done')
