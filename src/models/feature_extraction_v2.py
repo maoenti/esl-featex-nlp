@@ -137,6 +137,7 @@ class FeatureExtractionV2:
         response['v9'] = False
         response['pro1'] = False
         response['pro2'] = False
+        response['n1'] = False
 
         for token in doc:
             for opt in options:
@@ -149,6 +150,8 @@ class FeatureExtractionV2:
                         response['pro1'] = self.object_pronouns(token, item)
                     if response['pro2'] == False:
                         response['pro2'] = self.relative_pronouns(token, item)
+                    if response['n1'] == False:
+                        response['n1'] = self.singular_plural(token, item)
                     
         return response
     
@@ -164,4 +167,9 @@ class FeatureExtractionV2:
         if token.dep_ == "relcl":
             if opt_item[1] in relative_pronouns_words:
                 return True
+        return False
+    
+    def singular_plural(self, token, opt_item):
+        if token.pos_ == 'NOUN' and token.morph.get('Number') and token.text == opt_item[1]:
+            return True
         return False

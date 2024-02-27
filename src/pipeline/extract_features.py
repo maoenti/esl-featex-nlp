@@ -21,8 +21,9 @@ def extract_features(data):
         response['v9'] = opt_deps['v9']
         response['pro1'] = opt_deps['pro1']
         response['pro2'] = opt_deps['pro2']
+        response['n1'] = opt_deps['n1']
 
-        if response['pro2'] == True:
+        if response['n1'] == True:
             print(item['question_text'])
         extracted_features.append(response)
     set_training_data('feature_extraction_v2', extracted_features)
