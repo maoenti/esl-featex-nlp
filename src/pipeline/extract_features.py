@@ -1,4 +1,5 @@
 from src.models.feature_extraction_v2 import FeatureExtractionV2
+from src.utils.file_handling import set_training_data
 import spacy
 
 def extract_features(data):
@@ -21,5 +22,6 @@ def extract_features(data):
         if response['v9'] == True:
             print(item['question_text'])
         extracted_features.append(response)
+    set_training_data('feature_extraction_v2', extracted_features)
 
     return extracted_features
