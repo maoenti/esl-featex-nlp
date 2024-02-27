@@ -132,14 +132,26 @@ class FeatureExtractionV2:
     def option_deps(self):
         doc = self.nlp(self.data['question_text'])
         options = ['A', 'B', 'C', 'D']
-        v8 = False
-        v9 = False
+        response = {}
+        response['v8'] = False
+        response['v9'] = False
+        response['pro1'] = False
 
         for token in doc:
             for opt in options:
                 for item in self.data[opt]:
-                    if v8 == False:
-                        v8 = self.have_participle(token, item)
-                    if v9 == False:
-                        v9 = self.auxiliary(token, item)
-        return v8, v9
+                    if response['v8'] == False:
+                        response['v8'] = self.have_participle(token, item)
+                    if response['v9'] == False:
+                        response['v9'] = self.auxiliary(token, item)
+                    if response['pro1'] == False:
+                        response['pro1'] = self.object_pronouns(token, item)
+                    
+        return response
+    
+    def object_pronouns(self, token, opt_item):
+        if token.dep_ == 'pobj' and token.tag_.startswith('PRP'):
+            for anc in token.ancestors:
+                if anc.tag_ == 'IN' and (anc.text == opt_item[1] or token.text == opt_item[1]):
+                    return True
+        return False

@@ -17,9 +17,11 @@ def extract_features(data):
         response['v5'] = opt_tags['v5']
         response['v6'], response['v7'] = featex_v2.passives()
         opt_deps = featex_v2.option_deps()
-        response['v8'], response['v9'] = opt_deps
+        response['v8'] = opt_deps['v8']
+        response['v9'] = opt_deps['v9']
+        response['pro1'] = opt_deps['pro1']
 
-        if response['v9'] == True:
+        if response['pro1'] == True:
             print(item['question_text'])
         extracted_features.append(response)
     set_training_data('feature_extraction_v2', extracted_features)
