@@ -144,6 +144,8 @@ class FeatureExtractionV2:
         response['a2'] = False
         response['a3'] = False
         response['a4'] = False
+        response['pre1'] = False
+        response['pre2'] = False
 
         for token in doc:
             for opt in options:
@@ -170,6 +172,10 @@ class FeatureExtractionV2:
                         response['a3'] = self.adjective_noun(token, item)
                     if response['a4'] == False:
                         response['a4'] = self.adjective_so(token, item)
+                    if response['pre1'] == False:
+                        response['pre1'] = self.prep_addition(token, item)
+                    if response['pre2'] == False:
+                        response['pre2'] = self.prep_cause(token, item)
                     
         return response
     
@@ -233,4 +239,22 @@ class FeatureExtractionV2:
                     return True
                 else:
                     break
+        return False
+    
+    def prep_addition(self, token, opt_item):
+        if token.text.lower() == 'besides' and token.dep_ == 'prep' and token.pos_ == 'SCONJ':
+            for child in token.children:
+                if token.text == opt_item[1] or child.text == opt_item[1]:
+                    return True
+        return False
+    
+    def prep_cause(self, token, opt_item):
+        if token.text.lower() == 'because' and token.dep_ == 'mark':
+            for anc in token.ancestors:
+                if token.text == opt_item[1] or anc.text == opt_item[1]:
+                    return True
+        elif token.text.lower() == 'because' and token.dep_ == 'prep':
+            for child in token.children:
+                if token.text == opt_item[1] or child.text == opt_item[1]:
+                    return True
         return False

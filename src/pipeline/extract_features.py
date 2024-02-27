@@ -28,8 +28,10 @@ def extract_features(data):
         response['a2'] = opt_deps['a2']
         response['a3'] = opt_deps['a3']
         response['a4'] = opt_deps['a4']
+        response['pre1'] = opt_deps['pre1']
+        response['pre2'] = opt_deps['pre2']
 
-        if response['a4'] == True:
+        if response['pre2'] == True:
             print(item['question_text'])
         extracted_features.append(response)
     set_training_data('feature_extraction_v2', extracted_features)
