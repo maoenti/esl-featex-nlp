@@ -136,6 +136,7 @@ class FeatureExtractionV2:
         response['v8'] = False
         response['v9'] = False
         response['pro1'] = False
+        response['pro2'] = False
 
         for token in doc:
             for opt in options:
@@ -146,6 +147,8 @@ class FeatureExtractionV2:
                         response['v9'] = self.auxiliary(token, item)
                     if response['pro1'] == False:
                         response['pro1'] = self.object_pronouns(token, item)
+                    if response['pro2'] == False:
+                        response['pro2'] = self.relative_pronouns(token, item)
                     
         return response
     
@@ -154,4 +157,11 @@ class FeatureExtractionV2:
             for anc in token.ancestors:
                 if anc.tag_ == 'IN' and (anc.text == opt_item[1] or token.text == opt_item[1]):
                     return True
+        return False
+    
+    def relative_pronouns(self, token, opt_item):
+        relative_pronouns_words = ["who", "whom", "whose", "which", "that", "where"]
+        if token.dep_ == "relcl":
+            if opt_item[1] in relative_pronouns_words:
+                return True
         return False
