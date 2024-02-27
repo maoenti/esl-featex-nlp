@@ -140,6 +140,8 @@ class FeatureExtractionV2:
         response['n1'] = False
         response['n2'] = False
         response['n3'] = False
+        response['a1'] = False
+        response['a2'] = False
 
         for token in doc:
             for opt in options:
@@ -158,6 +160,10 @@ class FeatureExtractionV2:
                         response['n2'] = self.infinitive_ing_subject(token, item)
                     if response['n3'] == False:
                         response['n3'] = self.nominal_that_clause(token, item)
+                    if response['a1'] == False:
+                        response['a1'] = self.noun_qualifying_phrases(token, item)
+                    if response['a2'] == False:
+                        response['a2'] = self.no_mean_not_any(token, item)
                     
         return response
     
@@ -189,4 +195,18 @@ class FeatureExtractionV2:
     def nominal_that_clause(self, token, opt_item):
         if token.dep_ == 'mark' and token.text == opt_item[1] and token.text.lower() == 'that':
             return True
+        return False
+
+    def noun_qualifying_phrases(self, token, opt_item):
+        if token.text.lower() == 'the':
+            for anc in token.ancestors:
+                if anc.pos_ == 'NOUN' and anc.text == opt_item[1] and anc.morph.get('Number') == ['Sing']:
+                    return True
+        return False
+    
+    def no_mean_not_any(self, token, opt_item):
+        if token.tag_ == 'DT' and token.text.lower() == 'no':
+            for anc in token.ancestors:
+                if anc.text == opt_item[1] or token.text == opt_item[1]:
+                    return True
         return False
