@@ -138,6 +138,8 @@ class FeatureExtractionV2:
         response['pro1'] = False
         response['pro2'] = False
         response['n1'] = False
+        response['n2'] = False
+        response['n3'] = False
 
         for token in doc:
             for opt in options:
@@ -152,6 +154,10 @@ class FeatureExtractionV2:
                         response['pro2'] = self.relative_pronouns(token, item)
                     if response['n1'] == False:
                         response['n1'] = self.singular_plural(token, item)
+                    if response['n2'] == False:
+                        response['n2'] = self.infinitive_ing_subject(token, item)
+                    if response['n3'] == False:
+                        response['n3'] = self.nominal_that_clause(token, item)
                     
         return response
     
@@ -171,5 +177,16 @@ class FeatureExtractionV2:
     
     def singular_plural(self, token, opt_item):
         if token.pos_ == 'NOUN' and token.morph.get('Number') and token.text == opt_item[1]:
+            return True
+        return False
+    
+    def infinitive_ing_subject(self, token, opt_item):
+        subject = ['csubj', 'csubjpass']
+        if token.dep_ in subject and token.text == opt_item[1]:
+            return True
+        return False
+    
+    def nominal_that_clause(self, token, opt_item):
+        if token.dep_ == 'mark' and token.text == opt_item[1] and token.text.lower() == 'that':
             return True
         return False
