@@ -30,8 +30,12 @@ def extract_features(data):
         response['a4'] = opt_deps['a4']
         response['pre1'] = opt_deps['pre1']
         response['pre2'] = opt_deps['pre2']
+        response['con1'] = opt_deps['con1']
+        response['adv1'] = opt_deps['adv1']
+        response['s1'] = featex_v2.check_sva()
 
-        if response['pre2'] == True:
+
+        if response['s1'] == True:
             print(item['question_text'])
         extracted_features.append(response)
     set_training_data('feature_extraction_v2', extracted_features)
