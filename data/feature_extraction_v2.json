@@ -16,7 +16,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "The teachers are expecting to calling a meeting tomorrow in order to review the disciplinary problems",
@@ -35,7 +36,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "I want some meet your sister when she comes to see you she sounds very nice.",
@@ -54,7 +56,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "My friends tell mine the English exam is quite difficult but I am not worried.",
@@ -73,7 +76,8 @@
         "n2": false,
         "n3": false,
         "a1": true,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "The tickets, which are extremely good value, can be buy from large supermarkets.",
@@ -92,7 +96,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "The number of people who asked for the discount been low but grew during the summer period.",
@@ -111,7 +116,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "He wanted always to be a doctor and after doing medicine he now works in a hospital.",
@@ -130,7 +136,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "The informations they give us was not very helpful so I consulted the website instead.",
@@ -149,7 +156,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "There isn\u2019t much time, do you think we should get a taxi beneath the exhibition centre?.",
@@ -168,7 +176,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "He graduated in languages in June and is now thinking of do a second degree in psychology.",
@@ -187,7 +196,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "The policeman show us an identical picture of the man who stole the car.",
@@ -206,7 +216,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "I was so angry that I took the broken watch to the jewellers to got my money back.",
@@ -225,7 +236,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "He rang me this morning along tell me that he had passed his driving test.",
@@ -244,7 +256,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": true
     },
     {
         "question_text": "I will not be able to go in holiday this year unless I will get a part-time job.",
@@ -263,7 +276,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "It being such a nice day that they decided to have a picnic in the field.",
@@ -282,7 +296,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "I haven't never seen anybody who rides a horse so well before.",
@@ -301,7 +316,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "My boyfriend always taking me to see horror films, but I do not like them.",
@@ -320,7 +336,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "We went to Guatemala last year of we were tired of the usual beach holiday.",
@@ -339,7 +356,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "After quartz, calcite is the most abundant mineral aboard the crust of the Earth.",
@@ -358,7 +376,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "Regards as the world\u2019s foremost linguistic theorist, Noam Chomsky continues to create new theories about language and language learning.",
@@ -377,7 +396,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "Whenever any area receives more water than the ground can absorb, the excess water flows to the lowest level, carried loose mineral.",
@@ -396,7 +416,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "In 1935 seismologist Charles F Richter devise a numerical scale for rating the strength of earthquakes.",
@@ -415,7 +436,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "After a Second World War the woman wage earner became a standard part of middle-class life in the United States.",
@@ -434,7 +456,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "Celluloid and plastics have largely replaced genuine ivory in the manufacture like such things as buttons, billiard balls, and piano keys.",
@@ -453,7 +476,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "One of the tenets during New Criticism is that a critic need not tell readers what to think about a story.",
@@ -472,7 +496,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "The outer ear, which included the fleshy pinna and the auditory canal, picks up and funnels sound waves toward the eardrum.",
@@ -491,7 +516,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "An chair may be the oldest type of furniture, although its importance has varied from time to time and from country to country.",
@@ -510,7 +536,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "When wood, natural gas, oil, or any other fuel burns, substances in the fuel was combined with oxygen in the air to produce heat.",
@@ -529,7 +556,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "Deserts are arid land areas where more water was lost through evaporation than is gained through precipitation.",
@@ -548,7 +576,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": true
     },
     {
         "question_text": "When goshawk chicks are young, both parents had shared in the hunting duties and in guarding the nest.",
@@ -567,7 +596,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": true
     },
     {
         "question_text": "Not only is whales among the largest animals that ever lived, but they are also among the most intelligent.",
@@ -586,7 +616,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "Fish are the most ancient form of vertebrate life, and from them have evolved all other vertebrates.",
@@ -605,7 +636,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "There is about 350 species of sharks, and although they are all carnivorous, only a few species will attack people.",
@@ -624,7 +656,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "In the United States, there are many holidays throughout a year.",
@@ -643,7 +676,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "Tomatoes growing all year long in Florida.",
@@ -662,7 +696,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "Even thinks my aunt lost the beauty contest she is still the prettiest of all the other contestants.",
@@ -681,7 +716,8 @@
         "n2": false,
         "n3": false,
         "a1": true,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "The thief who stole my watch was compelling to restore it again.",
@@ -700,7 +736,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "I try to figuring out the answer of what the function of the organization is.",
@@ -719,7 +756,8 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     },
     {
         "question_text": "The huge have increased in popularity of specialty coffees has contributed to the success of Starbucks, Barney\u2019s and other coffee purveyors.",
@@ -738,6 +776,7 @@
         "n2": false,
         "n3": false,
         "a1": false,
-        "a2": false
+        "a2": false,
+        "a3": false
     }
 ]
