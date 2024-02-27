@@ -143,6 +143,7 @@ class FeatureExtractionV2:
         response['a1'] = False
         response['a2'] = False
         response['a3'] = False
+        response['a4'] = False
 
         for token in doc:
             for opt in options:
@@ -167,6 +168,8 @@ class FeatureExtractionV2:
                         response['a2'] = self.no_mean_not_any(token, item)
                     if response['a3'] == False:
                         response['a3'] = self.adjective_noun(token, item)
+                    if response['a4'] == False:
+                        response['a4'] = self.adjective_so(token, item)
                     
         return response
     
@@ -216,6 +219,15 @@ class FeatureExtractionV2:
     
     def adjective_noun(self, token, opt_item):
         if token.pos_ == 'NOUN' and token.dep_ == 'compound':
+            for anc in token.ancestors:
+                if token.text == opt_item[1] or anc.text == opt_item[1]:
+                    return True
+                else:
+                    break
+        return False
+    
+    def adjective_so(self, token, opt_item):
+        if token.text.lower() == 'so' and token.dep_ == 'advmod':
             for anc in token.ancestors:
                 if token.text == opt_item[1] or anc.text == opt_item[1]:
                     return True
