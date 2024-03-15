@@ -1,9 +1,10 @@
 from src.utils.file_handling import set_training_data
 
 class DataPreprocess():
-    def __init__(self, data, nlp):
+    def __init__(self, data, nlp, filename):
         self.data = data
         self.nlp = nlp
+        self.filename = filename
 
     def pos_tag(self, text):
         doc = self.nlp(text)
@@ -52,5 +53,5 @@ class DataPreprocess():
                 data[opt] = self.pos_tag(data[opt])
             self.get_underlines(data)
             counter += 1
-        set_training_data('test', self.data)
+        set_training_data(self.filename, self.data)
         return self.data

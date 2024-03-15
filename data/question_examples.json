@@ -1,314 +1,5027 @@
 [
     {
         "question_text": "I enjoy studying geography at school and now I have enrolled at the Economics Faculty.",
-        "A": "enjoy",
-        "B": "studying",
-        "C": "enrolled",
-        "D": "Economics",
-        "key_answer": "A"
+        "A": [
+            [
+                1,
+                "enjoy",
+                "VB"
+            ]
+        ],
+        "B": [
+            [
+                2,
+                "studying",
+                "VBG"
+            ]
+        ],
+        "C": [
+            [
+                10,
+                "enrolled",
+                "VBD"
+            ]
+        ],
+        "D": [
+            [
+                13,
+                "Economics",
+                "NNS"
+            ]
+        ],
+        "key_answer": "A",
+        "id": 0,
+        "pos_tag": [
+            [
+                0,
+                "I",
+                "PRP"
+            ],
+            [
+                1,
+                "enjoy",
+                "VBP"
+            ],
+            [
+                2,
+                "studying",
+                "VBG"
+            ],
+            [
+                3,
+                "geography",
+                "NN"
+            ],
+            [
+                4,
+                "at",
+                "IN"
+            ],
+            [
+                5,
+                "school",
+                "NN"
+            ],
+            [
+                6,
+                "and",
+                "CC"
+            ],
+            [
+                7,
+                "now",
+                "RB"
+            ],
+            [
+                8,
+                "I",
+                "PRP"
+            ],
+            [
+                9,
+                "have",
+                "VBP"
+            ],
+            [
+                10,
+                "enrolled",
+                "VBN"
+            ],
+            [
+                11,
+                "at",
+                "IN"
+            ],
+            [
+                12,
+                "the",
+                "DT"
+            ],
+            [
+                13,
+                "Economics",
+                "NNP"
+            ],
+            [
+                14,
+                "Faculty",
+                "NNP"
+            ],
+            [
+                15,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "The teachers are expecting to calling a meeting tomorrow in order to review the disciplinary problems",
-        "A": "expecting",
-        "B": "calling",
-        "C": "meeting",
-        "D": "the",
-        "key_answer": "B"
+        "A": [
+            [
+                3,
+                "expecting",
+                "VBG"
+            ]
+        ],
+        "B": [
+            [
+                5,
+                "calling",
+                "VBG"
+            ]
+        ],
+        "C": [
+            [
+                7,
+                "meeting",
+                "VBG"
+            ]
+        ],
+        "D": [
+            [
+                13,
+                "the",
+                "DT"
+            ]
+        ],
+        "key_answer": "B",
+        "id": 1,
+        "pos_tag": [
+            [
+                0,
+                "The",
+                "DT"
+            ],
+            [
+                1,
+                "teachers",
+                "NNS"
+            ],
+            [
+                2,
+                "are",
+                "VBP"
+            ],
+            [
+                3,
+                "expecting",
+                "VBG"
+            ],
+            [
+                4,
+                "to",
+                "TO"
+            ],
+            [
+                5,
+                "calling",
+                "VBG"
+            ],
+            [
+                6,
+                "a",
+                "DT"
+            ],
+            [
+                7,
+                "meeting",
+                "NN"
+            ],
+            [
+                8,
+                "tomorrow",
+                "NN"
+            ],
+            [
+                9,
+                "in",
+                "IN"
+            ],
+            [
+                10,
+                "order",
+                "NN"
+            ],
+            [
+                11,
+                "to",
+                "TO"
+            ],
+            [
+                12,
+                "review",
+                "VB"
+            ],
+            [
+                13,
+                "the",
+                "DT"
+            ],
+            [
+                14,
+                "disciplinary",
+                "JJ"
+            ],
+            [
+                15,
+                "problems",
+                "NNS"
+            ]
+        ]
     },
     {
         "question_text": "I want some meet your sister when she comes to see you she sounds very nice.",
-        "A": "I",
-        "B": "some",
-        "C": "when",
-        "D": "very",
-        "key_answer": "B"
+        "A": [
+            [
+                0,
+                "I",
+                "PRP"
+            ]
+        ],
+        "B": [
+            [
+                2,
+                "some",
+                "DT"
+            ]
+        ],
+        "C": [
+            [
+                6,
+                "when",
+                "WRB"
+            ]
+        ],
+        "D": [
+            [
+                14,
+                "very",
+                "RB"
+            ]
+        ],
+        "key_answer": "B",
+        "id": 2,
+        "pos_tag": [
+            [
+                0,
+                "I",
+                "PRP"
+            ],
+            [
+                1,
+                "want",
+                "VBP"
+            ],
+            [
+                2,
+                "some",
+                "DT"
+            ],
+            [
+                3,
+                "meet",
+                "VBP"
+            ],
+            [
+                4,
+                "your",
+                "PRP$"
+            ],
+            [
+                5,
+                "sister",
+                "NN"
+            ],
+            [
+                6,
+                "when",
+                "WRB"
+            ],
+            [
+                7,
+                "she",
+                "PRP"
+            ],
+            [
+                8,
+                "comes",
+                "VBZ"
+            ],
+            [
+                9,
+                "to",
+                "TO"
+            ],
+            [
+                10,
+                "see",
+                "VB"
+            ],
+            [
+                11,
+                "you",
+                "PRP"
+            ],
+            [
+                12,
+                "she",
+                "PRP"
+            ],
+            [
+                13,
+                "sounds",
+                "VBZ"
+            ],
+            [
+                14,
+                "very",
+                "RB"
+            ],
+            [
+                15,
+                "nice",
+                "JJ"
+            ],
+            [
+                16,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "My friends tell mine the English exam is quite difficult but I am not worried.",
-        "A": "mine",
-        "B": "exam",
-        "C": "quite",
-        "D": "not",
-        "key_answer": "A"
+        "A": [
+            [
+                3,
+                "mine",
+                "PRP"
+            ]
+        ],
+        "B": [
+            [
+                6,
+                "exam",
+                "NN"
+            ]
+        ],
+        "C": [
+            [
+                8,
+                "quite",
+                "RB"
+            ]
+        ],
+        "D": [
+            [
+                13,
+                "not",
+                "RB"
+            ]
+        ],
+        "key_answer": "A",
+        "id": 3,
+        "pos_tag": [
+            [
+                0,
+                "My",
+                "PRP$"
+            ],
+            [
+                1,
+                "friends",
+                "NNS"
+            ],
+            [
+                2,
+                "tell",
+                "VBP"
+            ],
+            [
+                3,
+                "mine",
+                "PRP"
+            ],
+            [
+                4,
+                "the",
+                "DT"
+            ],
+            [
+                5,
+                "English",
+                "JJ"
+            ],
+            [
+                6,
+                "exam",
+                "NN"
+            ],
+            [
+                7,
+                "is",
+                "VBZ"
+            ],
+            [
+                8,
+                "quite",
+                "RB"
+            ],
+            [
+                9,
+                "difficult",
+                "JJ"
+            ],
+            [
+                10,
+                "but",
+                "CC"
+            ],
+            [
+                11,
+                "I",
+                "PRP"
+            ],
+            [
+                12,
+                "am",
+                "VBP"
+            ],
+            [
+                13,
+                "not",
+                "RB"
+            ],
+            [
+                14,
+                "worried",
+                "JJ"
+            ],
+            [
+                15,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "The tickets, which are extremely good value, can be buy from large supermarkets.",
-        "A": "tickets",
-        "B": "which",
-        "C": "good",
-        "D": "buy",
-        "key_answer": "D"
+        "A": [
+            [
+                1,
+                "tickets",
+                "NNS"
+            ]
+        ],
+        "B": [
+            [
+                3,
+                "which",
+                "WDT"
+            ]
+        ],
+        "C": [
+            [
+                6,
+                "good",
+                "JJ"
+            ]
+        ],
+        "D": [
+            [
+                11,
+                "buy",
+                "VB"
+            ]
+        ],
+        "key_answer": "D",
+        "id": 4,
+        "pos_tag": [
+            [
+                0,
+                "The",
+                "DT"
+            ],
+            [
+                1,
+                "tickets",
+                "NNS"
+            ],
+            [
+                2,
+                ",",
+                ","
+            ],
+            [
+                3,
+                "which",
+                "WDT"
+            ],
+            [
+                4,
+                "are",
+                "VBP"
+            ],
+            [
+                5,
+                "extremely",
+                "RB"
+            ],
+            [
+                6,
+                "good",
+                "JJ"
+            ],
+            [
+                7,
+                "value",
+                "NN"
+            ],
+            [
+                8,
+                ",",
+                ","
+            ],
+            [
+                9,
+                "can",
+                "MD"
+            ],
+            [
+                10,
+                "be",
+                "VB"
+            ],
+            [
+                11,
+                "buy",
+                "VB"
+            ],
+            [
+                12,
+                "from",
+                "IN"
+            ],
+            [
+                13,
+                "large",
+                "JJ"
+            ],
+            [
+                14,
+                "supermarkets",
+                "NNS"
+            ],
+            [
+                15,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "The number of people who asked for the discount been low but grew during the summer period.",
-        "A": "who",
-        "B": "asked",
-        "C": "been",
-        "D": "grew",
-        "key_answer": "C"
+        "A": [
+            [
+                4,
+                "who",
+                "WP"
+            ]
+        ],
+        "B": [
+            [
+                5,
+                "asked",
+                "VBD"
+            ]
+        ],
+        "C": [
+            [
+                9,
+                "been",
+                "VBN"
+            ]
+        ],
+        "D": [
+            [
+                12,
+                "grew",
+                "VBD"
+            ]
+        ],
+        "key_answer": "C",
+        "id": 5,
+        "pos_tag": [
+            [
+                0,
+                "The",
+                "DT"
+            ],
+            [
+                1,
+                "number",
+                "NN"
+            ],
+            [
+                2,
+                "of",
+                "IN"
+            ],
+            [
+                3,
+                "people",
+                "NNS"
+            ],
+            [
+                4,
+                "who",
+                "WP"
+            ],
+            [
+                5,
+                "asked",
+                "VBD"
+            ],
+            [
+                6,
+                "for",
+                "IN"
+            ],
+            [
+                7,
+                "the",
+                "DT"
+            ],
+            [
+                8,
+                "discount",
+                "NN"
+            ],
+            [
+                9,
+                "been",
+                "VBN"
+            ],
+            [
+                10,
+                "low",
+                "JJ"
+            ],
+            [
+                11,
+                "but",
+                "CC"
+            ],
+            [
+                12,
+                "grew",
+                "VBD"
+            ],
+            [
+                13,
+                "during",
+                "IN"
+            ],
+            [
+                14,
+                "the",
+                "DT"
+            ],
+            [
+                15,
+                "summer",
+                "NN"
+            ],
+            [
+                16,
+                "period",
+                "NN"
+            ],
+            [
+                17,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "He wanted always to be a doctor and after doing medicine he now works in a hospital.",
-        "A": "wanted",
-        "B": "a",
-        "C": "after",
-        "D": "works",
-        "key_answer": "A"
+        "A": [
+            [
+                1,
+                "wanted",
+                "VBD"
+            ]
+        ],
+        "B": [
+            [
+                5,
+                "a",
+                "DT"
+            ]
+        ],
+        "C": [
+            [
+                8,
+                "after",
+                "IN"
+            ]
+        ],
+        "D": [
+            [
+                13,
+                "works",
+                "VBZ"
+            ]
+        ],
+        "key_answer": "A",
+        "id": 6,
+        "pos_tag": [
+            [
+                0,
+                "He",
+                "PRP"
+            ],
+            [
+                1,
+                "wanted",
+                "VBD"
+            ],
+            [
+                2,
+                "always",
+                "RB"
+            ],
+            [
+                3,
+                "to",
+                "TO"
+            ],
+            [
+                4,
+                "be",
+                "VB"
+            ],
+            [
+                5,
+                "a",
+                "DT"
+            ],
+            [
+                6,
+                "doctor",
+                "NN"
+            ],
+            [
+                7,
+                "and",
+                "CC"
+            ],
+            [
+                8,
+                "after",
+                "IN"
+            ],
+            [
+                9,
+                "doing",
+                "VBG"
+            ],
+            [
+                10,
+                "medicine",
+                "NN"
+            ],
+            [
+                11,
+                "he",
+                "PRP"
+            ],
+            [
+                12,
+                "now",
+                "RB"
+            ],
+            [
+                13,
+                "works",
+                "VBZ"
+            ],
+            [
+                14,
+                "in",
+                "IN"
+            ],
+            [
+                15,
+                "a",
+                "DT"
+            ],
+            [
+                16,
+                "hospital",
+                "NN"
+            ],
+            [
+                17,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "The informations they give us was not very helpful so I consulted the website instead.",
-        "A": "informations",
-        "B": "give",
-        "C": "helpful",
-        "D": "so",
-        "key_answer": "B"
+        "A": [
+            [
+                1,
+                "informations",
+                "NNS"
+            ]
+        ],
+        "B": [
+            [
+                3,
+                "give",
+                "VB"
+            ]
+        ],
+        "C": [
+            [
+                8,
+                "helpful",
+                "JJ"
+            ]
+        ],
+        "D": [
+            [
+                9,
+                "so",
+                "RB"
+            ]
+        ],
+        "key_answer": "B",
+        "id": 7,
+        "pos_tag": [
+            [
+                0,
+                "The",
+                "DT"
+            ],
+            [
+                1,
+                "informations",
+                "NNS"
+            ],
+            [
+                2,
+                "they",
+                "PRP"
+            ],
+            [
+                3,
+                "give",
+                "VBP"
+            ],
+            [
+                4,
+                "us",
+                "PRP"
+            ],
+            [
+                5,
+                "was",
+                "VBD"
+            ],
+            [
+                6,
+                "not",
+                "RB"
+            ],
+            [
+                7,
+                "very",
+                "RB"
+            ],
+            [
+                8,
+                "helpful",
+                "JJ"
+            ],
+            [
+                9,
+                "so",
+                "IN"
+            ],
+            [
+                10,
+                "I",
+                "PRP"
+            ],
+            [
+                11,
+                "consulted",
+                "VBD"
+            ],
+            [
+                12,
+                "the",
+                "DT"
+            ],
+            [
+                13,
+                "website",
+                "NN"
+            ],
+            [
+                14,
+                "instead",
+                "RB"
+            ],
+            [
+                15,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "There isn\u2019t much time, do you think we should get a taxi beneath the exhibition centre?.",
-        "A": "much",
-        "B": "do",
-        "C": "think",
-        "D": "beneath",
-        "key_answer": "D"
+        "A": [
+            [
+                3,
+                "much",
+                "RB"
+            ]
+        ],
+        "B": [
+            [
+                6,
+                "do",
+                "VBP"
+            ]
+        ],
+        "C": [
+            [
+                8,
+                "think",
+                "VB"
+            ]
+        ],
+        "D": [
+            [
+                14,
+                "beneath",
+                "IN"
+            ]
+        ],
+        "key_answer": "D",
+        "id": 8,
+        "pos_tag": [
+            [
+                0,
+                "There",
+                "EX"
+            ],
+            [
+                1,
+                "is",
+                "VBZ"
+            ],
+            [
+                2,
+                "n\u2019t",
+                "RB"
+            ],
+            [
+                3,
+                "much",
+                "JJ"
+            ],
+            [
+                4,
+                "time",
+                "NN"
+            ],
+            [
+                5,
+                ",",
+                ","
+            ],
+            [
+                6,
+                "do",
+                "VBP"
+            ],
+            [
+                7,
+                "you",
+                "PRP"
+            ],
+            [
+                8,
+                "think",
+                "VB"
+            ],
+            [
+                9,
+                "we",
+                "PRP"
+            ],
+            [
+                10,
+                "should",
+                "MD"
+            ],
+            [
+                11,
+                "get",
+                "VB"
+            ],
+            [
+                12,
+                "a",
+                "DT"
+            ],
+            [
+                13,
+                "taxi",
+                "NN"
+            ],
+            [
+                14,
+                "beneath",
+                "IN"
+            ],
+            [
+                15,
+                "the",
+                "DT"
+            ],
+            [
+                16,
+                "exhibition",
+                "NN"
+            ],
+            [
+                17,
+                "centre",
+                "NN"
+            ],
+            [
+                18,
+                "?",
+                "."
+            ],
+            [
+                19,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "He graduated in languages in June and is now thinking of do a second degree in psychology.",
-        "A": "in",
-        "B": "is",
-        "C": "thinking",
-        "D": "do",
-        "key_answer": "D"
+        "A": [
+            [
+                2,
+                "in",
+                "IN"
+            ]
+        ],
+        "B": [
+            [
+                7,
+                "is",
+                "VBZ"
+            ]
+        ],
+        "C": [
+            [
+                9,
+                "thinking",
+                "VBG"
+            ]
+        ],
+        "D": [
+            [
+                11,
+                "do",
+                "VBP"
+            ]
+        ],
+        "key_answer": "D",
+        "id": 9,
+        "pos_tag": [
+            [
+                0,
+                "He",
+                "PRP"
+            ],
+            [
+                1,
+                "graduated",
+                "VBD"
+            ],
+            [
+                2,
+                "in",
+                "IN"
+            ],
+            [
+                3,
+                "languages",
+                "NNS"
+            ],
+            [
+                4,
+                "in",
+                "IN"
+            ],
+            [
+                5,
+                "June",
+                "NNP"
+            ],
+            [
+                6,
+                "and",
+                "CC"
+            ],
+            [
+                7,
+                "is",
+                "VBZ"
+            ],
+            [
+                8,
+                "now",
+                "RB"
+            ],
+            [
+                9,
+                "thinking",
+                "VBG"
+            ],
+            [
+                10,
+                "of",
+                "IN"
+            ],
+            [
+                11,
+                "do",
+                "VB"
+            ],
+            [
+                12,
+                "a",
+                "DT"
+            ],
+            [
+                13,
+                "second",
+                "JJ"
+            ],
+            [
+                14,
+                "degree",
+                "NN"
+            ],
+            [
+                15,
+                "in",
+                "IN"
+            ],
+            [
+                16,
+                "psychology",
+                "NN"
+            ],
+            [
+                17,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "The policeman show us an identical picture of the man who stole the car.",
-        "A": "show",
-        "B": "identical",
-        "C": "stole",
-        "D": "the",
-        "key_answer": "A"
+        "A": [
+            [
+                2,
+                "show",
+                "VB"
+            ]
+        ],
+        "B": [
+            [
+                5,
+                "identical",
+                "JJ"
+            ]
+        ],
+        "C": [
+            [
+                11,
+                "stole",
+                "VBD"
+            ]
+        ],
+        "D": [
+            [
+                12,
+                "the",
+                "DT"
+            ]
+        ],
+        "key_answer": "A",
+        "id": 10,
+        "pos_tag": [
+            [
+                0,
+                "The",
+                "DT"
+            ],
+            [
+                1,
+                "policeman",
+                "NN"
+            ],
+            [
+                2,
+                "show",
+                "VBP"
+            ],
+            [
+                3,
+                "us",
+                "PRP"
+            ],
+            [
+                4,
+                "an",
+                "DT"
+            ],
+            [
+                5,
+                "identical",
+                "JJ"
+            ],
+            [
+                6,
+                "picture",
+                "NN"
+            ],
+            [
+                7,
+                "of",
+                "IN"
+            ],
+            [
+                8,
+                "the",
+                "DT"
+            ],
+            [
+                9,
+                "man",
+                "NN"
+            ],
+            [
+                10,
+                "who",
+                "WP"
+            ],
+            [
+                11,
+                "stole",
+                "VBD"
+            ],
+            [
+                12,
+                "the",
+                "DT"
+            ],
+            [
+                13,
+                "car",
+                "NN"
+            ],
+            [
+                14,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "I was so angry that I took the broken watch to the jewellers to got my money back.",
-        "A": "was",
-        "B": "so",
-        "C": "to",
-        "D": "got",
-        "key_answer": "D"
+        "A": [
+            [
+                1,
+                "was",
+                "VBD"
+            ]
+        ],
+        "B": [
+            [
+                2,
+                "so",
+                "RB"
+            ]
+        ],
+        "C": [
+            [
+                10,
+                "to",
+                "TO"
+            ]
+        ],
+        "D": [
+            [
+                14,
+                "got",
+                "VBD"
+            ]
+        ],
+        "key_answer": "D",
+        "id": 11,
+        "pos_tag": [
+            [
+                0,
+                "I",
+                "PRP"
+            ],
+            [
+                1,
+                "was",
+                "VBD"
+            ],
+            [
+                2,
+                "so",
+                "RB"
+            ],
+            [
+                3,
+                "angry",
+                "JJ"
+            ],
+            [
+                4,
+                "that",
+                "IN"
+            ],
+            [
+                5,
+                "I",
+                "PRP"
+            ],
+            [
+                6,
+                "took",
+                "VBD"
+            ],
+            [
+                7,
+                "the",
+                "DT"
+            ],
+            [
+                8,
+                "broken",
+                "VBN"
+            ],
+            [
+                9,
+                "watch",
+                "NN"
+            ],
+            [
+                10,
+                "to",
+                "IN"
+            ],
+            [
+                11,
+                "the",
+                "DT"
+            ],
+            [
+                12,
+                "jewellers",
+                "NNS"
+            ],
+            [
+                13,
+                "to",
+                "TO"
+            ],
+            [
+                14,
+                "got",
+                "VB"
+            ],
+            [
+                15,
+                "my",
+                "PRP$"
+            ],
+            [
+                16,
+                "money",
+                "NN"
+            ],
+            [
+                17,
+                "back",
+                "RB"
+            ],
+            [
+                18,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "He rang me this morning along tell me that he had passed his driving test.",
-        "A": "rang",
-        "B": "along",
-        "C": "had",
-        "D": "driving",
-        "key_answer": "B"
+        "A": [
+            [
+                1,
+                "rang",
+                "NNP"
+            ]
+        ],
+        "B": [
+            [
+                5,
+                "along",
+                "IN"
+            ]
+        ],
+        "C": [
+            [
+                10,
+                "had",
+                "VBD"
+            ]
+        ],
+        "D": [
+            [
+                13,
+                "driving",
+                "VBG"
+            ]
+        ],
+        "key_answer": "B",
+        "id": 12,
+        "pos_tag": [
+            [
+                0,
+                "He",
+                "PRP"
+            ],
+            [
+                1,
+                "rang",
+                "VBD"
+            ],
+            [
+                2,
+                "me",
+                "PRP"
+            ],
+            [
+                3,
+                "this",
+                "DT"
+            ],
+            [
+                4,
+                "morning",
+                "NN"
+            ],
+            [
+                5,
+                "along",
+                "IN"
+            ],
+            [
+                6,
+                "tell",
+                "VBP"
+            ],
+            [
+                7,
+                "me",
+                "PRP"
+            ],
+            [
+                8,
+                "that",
+                "IN"
+            ],
+            [
+                9,
+                "he",
+                "PRP"
+            ],
+            [
+                10,
+                "had",
+                "VBD"
+            ],
+            [
+                11,
+                "passed",
+                "VBN"
+            ],
+            [
+                12,
+                "his",
+                "PRP$"
+            ],
+            [
+                13,
+                "driving",
+                "NN"
+            ],
+            [
+                14,
+                "test",
+                "NN"
+            ],
+            [
+                15,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "I will not be able to go in holiday this year unless I will get a part-time job.",
-        "A": "be",
-        "B": "in",
-        "C": "this",
-        "D": "unless",
-        "key_answer": "B"
+        "A": [
+            [
+                3,
+                "be",
+                "VB"
+            ]
+        ],
+        "B": [
+            [
+                7,
+                "in",
+                "IN"
+            ]
+        ],
+        "C": [
+            [
+                9,
+                "this",
+                "DT"
+            ]
+        ],
+        "D": [
+            [
+                11,
+                "unless",
+                "IN"
+            ]
+        ],
+        "key_answer": "B",
+        "id": 13,
+        "pos_tag": [
+            [
+                0,
+                "I",
+                "PRP"
+            ],
+            [
+                1,
+                "will",
+                "MD"
+            ],
+            [
+                2,
+                "not",
+                "RB"
+            ],
+            [
+                3,
+                "be",
+                "VB"
+            ],
+            [
+                4,
+                "able",
+                "JJ"
+            ],
+            [
+                5,
+                "to",
+                "TO"
+            ],
+            [
+                6,
+                "go",
+                "VB"
+            ],
+            [
+                7,
+                "in",
+                "IN"
+            ],
+            [
+                8,
+                "holiday",
+                "NN"
+            ],
+            [
+                9,
+                "this",
+                "DT"
+            ],
+            [
+                10,
+                "year",
+                "NN"
+            ],
+            [
+                11,
+                "unless",
+                "IN"
+            ],
+            [
+                12,
+                "I",
+                "PRP"
+            ],
+            [
+                13,
+                "will",
+                "MD"
+            ],
+            [
+                14,
+                "get",
+                "VB"
+            ],
+            [
+                15,
+                "a",
+                "DT"
+            ],
+            [
+                16,
+                "part",
+                "JJ"
+            ],
+            [
+                17,
+                "-",
+                "HYPH"
+            ],
+            [
+                18,
+                "time",
+                "NN"
+            ],
+            [
+                19,
+                "job",
+                "NN"
+            ],
+            [
+                20,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "It being such a nice day that they decided to have a picnic in the field.",
-        "A": "being",
-        "B": "such",
-        "C": "that",
-        "D": "in",
-        "key_answer": "A"
+        "A": [
+            [
+                1,
+                "being",
+                "VBG"
+            ]
+        ],
+        "B": [
+            [
+                2,
+                "such",
+                "JJ"
+            ]
+        ],
+        "C": [
+            [
+                6,
+                "that",
+                "DT"
+            ]
+        ],
+        "D": [
+            [
+                13,
+                "in",
+                "IN"
+            ]
+        ],
+        "key_answer": "A",
+        "id": 14,
+        "pos_tag": [
+            [
+                0,
+                "It",
+                "PRP"
+            ],
+            [
+                1,
+                "being",
+                "VBG"
+            ],
+            [
+                2,
+                "such",
+                "PDT"
+            ],
+            [
+                3,
+                "a",
+                "DT"
+            ],
+            [
+                4,
+                "nice",
+                "JJ"
+            ],
+            [
+                5,
+                "day",
+                "NN"
+            ],
+            [
+                6,
+                "that",
+                "WDT"
+            ],
+            [
+                7,
+                "they",
+                "PRP"
+            ],
+            [
+                8,
+                "decided",
+                "VBD"
+            ],
+            [
+                9,
+                "to",
+                "TO"
+            ],
+            [
+                10,
+                "have",
+                "VB"
+            ],
+            [
+                11,
+                "a",
+                "DT"
+            ],
+            [
+                12,
+                "picnic",
+                "NN"
+            ],
+            [
+                13,
+                "in",
+                "IN"
+            ],
+            [
+                14,
+                "the",
+                "DT"
+            ],
+            [
+                15,
+                "field",
+                "NN"
+            ],
+            [
+                16,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "I haven't never seen anybody who rides a horse so well before.",
-        "A": "haven't",
-        "B": "anybody",
-        "C": "rides",
-        "D": "so well",
-        "key_answer": "A"
+        "A": [
+            [
+                1,
+                "have",
+                "VBP"
+            ],
+            [
+                2,
+                "n't",
+                "RB"
+            ]
+        ],
+        "B": [
+            [
+                5,
+                "anybody",
+                "NN"
+            ]
+        ],
+        "C": [
+            [
+                7,
+                "rides",
+                "VBZ"
+            ]
+        ],
+        "D": [
+            [
+                10,
+                "so",
+                "RB"
+            ],
+            [
+                11,
+                "well",
+                "RB"
+            ]
+        ],
+        "key_answer": "A",
+        "id": 15,
+        "pos_tag": [
+            [
+                0,
+                "I",
+                "PRP"
+            ],
+            [
+                1,
+                "have",
+                "VBP"
+            ],
+            [
+                2,
+                "n't",
+                "RB"
+            ],
+            [
+                3,
+                "never",
+                "RB"
+            ],
+            [
+                4,
+                "seen",
+                "VBN"
+            ],
+            [
+                5,
+                "anybody",
+                "NN"
+            ],
+            [
+                6,
+                "who",
+                "WP"
+            ],
+            [
+                7,
+                "rides",
+                "VBZ"
+            ],
+            [
+                8,
+                "a",
+                "DT"
+            ],
+            [
+                9,
+                "horse",
+                "NN"
+            ],
+            [
+                10,
+                "so",
+                "RB"
+            ],
+            [
+                11,
+                "well",
+                "RB"
+            ],
+            [
+                12,
+                "before",
+                "RB"
+            ],
+            [
+                13,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "My boyfriend always taking me to see horror films, but I do not like them.",
-        "A": "My",
-        "B": "boyfriend",
-        "C": "taking",
-        "D": "do",
-        "key_answer": "C"
+        "A": [
+            [
+                0,
+                "My",
+                "PRP$"
+            ]
+        ],
+        "B": [
+            [
+                1,
+                "boyfriend",
+                "NN"
+            ]
+        ],
+        "C": [
+            [
+                3,
+                "taking",
+                "VBG"
+            ]
+        ],
+        "D": [
+            [
+                12,
+                "do",
+                "VBP"
+            ]
+        ],
+        "key_answer": "C",
+        "id": 16,
+        "pos_tag": [
+            [
+                0,
+                "My",
+                "PRP$"
+            ],
+            [
+                1,
+                "boyfriend",
+                "NN"
+            ],
+            [
+                2,
+                "always",
+                "RB"
+            ],
+            [
+                3,
+                "taking",
+                "VBG"
+            ],
+            [
+                4,
+                "me",
+                "PRP"
+            ],
+            [
+                5,
+                "to",
+                "TO"
+            ],
+            [
+                6,
+                "see",
+                "VB"
+            ],
+            [
+                7,
+                "horror",
+                "NN"
+            ],
+            [
+                8,
+                "films",
+                "NNS"
+            ],
+            [
+                9,
+                ",",
+                ","
+            ],
+            [
+                10,
+                "but",
+                "CC"
+            ],
+            [
+                11,
+                "I",
+                "PRP"
+            ],
+            [
+                12,
+                "do",
+                "VBP"
+            ],
+            [
+                13,
+                "not",
+                "RB"
+            ],
+            [
+                14,
+                "like",
+                "VB"
+            ],
+            [
+                15,
+                "them",
+                "PRP"
+            ],
+            [
+                16,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "We went to Guatemala last year of we were tired of the usual beach holiday.",
-        "A": "went",
-        "B": "of",
-        "C": "tired",
-        "D": "the",
-        "key_answer": "B"
+        "A": [
+            [
+                1,
+                "went",
+                "VBD"
+            ]
+        ],
+        "B": [
+            [
+                6,
+                "of",
+                "IN"
+            ]
+        ],
+        "C": [
+            [
+                9,
+                "tired",
+                "JJ"
+            ]
+        ],
+        "D": [
+            [
+                11,
+                "the",
+                "DT"
+            ]
+        ],
+        "key_answer": "B",
+        "id": 17,
+        "pos_tag": [
+            [
+                0,
+                "We",
+                "PRP"
+            ],
+            [
+                1,
+                "went",
+                "VBD"
+            ],
+            [
+                2,
+                "to",
+                "IN"
+            ],
+            [
+                3,
+                "Guatemala",
+                "NNP"
+            ],
+            [
+                4,
+                "last",
+                "JJ"
+            ],
+            [
+                5,
+                "year",
+                "NN"
+            ],
+            [
+                6,
+                "of",
+                "IN"
+            ],
+            [
+                7,
+                "we",
+                "PRP"
+            ],
+            [
+                8,
+                "were",
+                "VBD"
+            ],
+            [
+                9,
+                "tired",
+                "JJ"
+            ],
+            [
+                10,
+                "of",
+                "IN"
+            ],
+            [
+                11,
+                "the",
+                "DT"
+            ],
+            [
+                12,
+                "usual",
+                "JJ"
+            ],
+            [
+                13,
+                "beach",
+                "NN"
+            ],
+            [
+                14,
+                "holiday",
+                "NN"
+            ],
+            [
+                15,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "After quartz, calcite is the most abundant mineral aboard the crust of the Earth.",
-        "A": "After",
-        "B": "most",
-        "C": "aboard",
-        "D": "of",
-        "key_answer": "C"
+        "A": [
+            [
+                0,
+                "After",
+                "IN"
+            ]
+        ],
+        "B": [
+            [
+                6,
+                "most",
+                "RBS"
+            ]
+        ],
+        "C": [
+            [
+                9,
+                "aboard",
+                "IN"
+            ]
+        ],
+        "D": [
+            [
+                12,
+                "of",
+                "IN"
+            ]
+        ],
+        "key_answer": "C",
+        "id": 18,
+        "pos_tag": [
+            [
+                0,
+                "After",
+                "IN"
+            ],
+            [
+                1,
+                "quartz",
+                "NN"
+            ],
+            [
+                2,
+                ",",
+                ","
+            ],
+            [
+                3,
+                "calcite",
+                "NN"
+            ],
+            [
+                4,
+                "is",
+                "VBZ"
+            ],
+            [
+                5,
+                "the",
+                "DT"
+            ],
+            [
+                6,
+                "most",
+                "RBS"
+            ],
+            [
+                7,
+                "abundant",
+                "JJ"
+            ],
+            [
+                8,
+                "mineral",
+                "NN"
+            ],
+            [
+                9,
+                "aboard",
+                "IN"
+            ],
+            [
+                10,
+                "the",
+                "DT"
+            ],
+            [
+                11,
+                "crust",
+                "NN"
+            ],
+            [
+                12,
+                "of",
+                "IN"
+            ],
+            [
+                13,
+                "the",
+                "DT"
+            ],
+            [
+                14,
+                "Earth",
+                "NNP"
+            ],
+            [
+                15,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "Regards as the world\u2019s foremost linguistic theorist, Noam Chomsky continues to create new theories about language and language learning.",
-        "A": "Regards",
-        "B": "the",
-        "C": "Chomsky",
-        "D": "to",
-        "key_answer": "A"
+        "A": [
+            [
+                0,
+                "Regards",
+                "NNS"
+            ]
+        ],
+        "B": [
+            [
+                2,
+                "the",
+                "DT"
+            ]
+        ],
+        "C": [
+            [
+                10,
+                "Chomsky",
+                "JJ"
+            ]
+        ],
+        "D": [
+            [
+                12,
+                "to",
+                "TO"
+            ]
+        ],
+        "key_answer": "A",
+        "id": 19,
+        "pos_tag": [
+            [
+                0,
+                "Regards",
+                "NNS"
+            ],
+            [
+                1,
+                "as",
+                "IN"
+            ],
+            [
+                2,
+                "the",
+                "DT"
+            ],
+            [
+                3,
+                "world",
+                "NN"
+            ],
+            [
+                4,
+                "\u2019s",
+                "POS"
+            ],
+            [
+                5,
+                "foremost",
+                "JJ"
+            ],
+            [
+                6,
+                "linguistic",
+                "JJ"
+            ],
+            [
+                7,
+                "theorist",
+                "NN"
+            ],
+            [
+                8,
+                ",",
+                ","
+            ],
+            [
+                9,
+                "Noam",
+                "NNP"
+            ],
+            [
+                10,
+                "Chomsky",
+                "NNP"
+            ],
+            [
+                11,
+                "continues",
+                "VBZ"
+            ],
+            [
+                12,
+                "to",
+                "TO"
+            ],
+            [
+                13,
+                "create",
+                "VB"
+            ],
+            [
+                14,
+                "new",
+                "JJ"
+            ],
+            [
+                15,
+                "theories",
+                "NNS"
+            ],
+            [
+                16,
+                "about",
+                "IN"
+            ],
+            [
+                17,
+                "language",
+                "NN"
+            ],
+            [
+                18,
+                "and",
+                "CC"
+            ],
+            [
+                19,
+                "language",
+                "NN"
+            ],
+            [
+                20,
+                "learning",
+                "NN"
+            ],
+            [
+                21,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "Whenever any area receives more water than the ground can absorb, the excess water flows to the lowest level, carried loose mineral.",
-        "A": "Whenever",
-        "B": "than",
-        "C": "to",
-        "D": "carried",
-        "key_answer": "D"
+        "A": [
+            [
+                0,
+                "Whenever",
+                "WRB"
+            ]
+        ],
+        "B": [
+            [
+                6,
+                "than",
+                "IN"
+            ]
+        ],
+        "C": [
+            [
+                16,
+                "to",
+                "TO"
+            ]
+        ],
+        "D": [
+            [
+                21,
+                "carried",
+                "VBD"
+            ]
+        ],
+        "key_answer": "D",
+        "id": 20,
+        "pos_tag": [
+            [
+                0,
+                "Whenever",
+                "WRB"
+            ],
+            [
+                1,
+                "any",
+                "DT"
+            ],
+            [
+                2,
+                "area",
+                "NN"
+            ],
+            [
+                3,
+                "receives",
+                "VBZ"
+            ],
+            [
+                4,
+                "more",
+                "JJR"
+            ],
+            [
+                5,
+                "water",
+                "NN"
+            ],
+            [
+                6,
+                "than",
+                "IN"
+            ],
+            [
+                7,
+                "the",
+                "DT"
+            ],
+            [
+                8,
+                "ground",
+                "NN"
+            ],
+            [
+                9,
+                "can",
+                "MD"
+            ],
+            [
+                10,
+                "absorb",
+                "VB"
+            ],
+            [
+                11,
+                ",",
+                ","
+            ],
+            [
+                12,
+                "the",
+                "DT"
+            ],
+            [
+                13,
+                "excess",
+                "JJ"
+            ],
+            [
+                14,
+                "water",
+                "NN"
+            ],
+            [
+                15,
+                "flows",
+                "VBZ"
+            ],
+            [
+                16,
+                "to",
+                "IN"
+            ],
+            [
+                17,
+                "the",
+                "DT"
+            ],
+            [
+                18,
+                "lowest",
+                "JJS"
+            ],
+            [
+                19,
+                "level",
+                "NN"
+            ],
+            [
+                20,
+                ",",
+                ","
+            ],
+            [
+                21,
+                "carried",
+                "VBD"
+            ],
+            [
+                22,
+                "loose",
+                "JJ"
+            ],
+            [
+                23,
+                "mineral",
+                "NN"
+            ],
+            [
+                24,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "In 1935 seismologist Charles F Richter devise a numerical scale for rating the strength of earthquakes.",
-        "A": "In",
-        "B": "devise",
-        "C": "for",
-        "D": "of",
-        "key_answer": "B"
+        "A": [
+            [
+                0,
+                "In",
+                "IN"
+            ]
+        ],
+        "B": [
+            [
+                6,
+                "devise",
+                "NN"
+            ]
+        ],
+        "C": [
+            [
+                10,
+                "for",
+                "IN"
+            ]
+        ],
+        "D": [
+            [
+                14,
+                "of",
+                "IN"
+            ]
+        ],
+        "key_answer": "B",
+        "id": 21,
+        "pos_tag": [
+            [
+                0,
+                "In",
+                "IN"
+            ],
+            [
+                1,
+                "1935",
+                "CD"
+            ],
+            [
+                2,
+                "seismologist",
+                "NN"
+            ],
+            [
+                3,
+                "Charles",
+                "NNP"
+            ],
+            [
+                4,
+                "F",
+                "NNP"
+            ],
+            [
+                5,
+                "Richter",
+                "NNP"
+            ],
+            [
+                6,
+                "devise",
+                "VB"
+            ],
+            [
+                7,
+                "a",
+                "DT"
+            ],
+            [
+                8,
+                "numerical",
+                "JJ"
+            ],
+            [
+                9,
+                "scale",
+                "NN"
+            ],
+            [
+                10,
+                "for",
+                "IN"
+            ],
+            [
+                11,
+                "rating",
+                "VBG"
+            ],
+            [
+                12,
+                "the",
+                "DT"
+            ],
+            [
+                13,
+                "strength",
+                "NN"
+            ],
+            [
+                14,
+                "of",
+                "IN"
+            ],
+            [
+                15,
+                "earthquakes",
+                "NNS"
+            ],
+            [
+                16,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "After a Second World War the woman wage earner became a standard part of middle-class life in the United States.",
-        "A": "After",
-        "B": "a",
-        "C": "Second",
-        "D": "became",
-        "key_answer": "B"
+        "A": [
+            [
+                0,
+                "After",
+                "IN"
+            ]
+        ],
+        "B": [
+            [
+                1,
+                "a",
+                "DT"
+            ]
+        ],
+        "C": [
+            [
+                2,
+                "Second",
+                "RB"
+            ]
+        ],
+        "D": [
+            [
+                9,
+                "became",
+                "VBD"
+            ]
+        ],
+        "key_answer": "B",
+        "id": 22,
+        "pos_tag": [
+            [
+                0,
+                "After",
+                "IN"
+            ],
+            [
+                1,
+                "a",
+                "DT"
+            ],
+            [
+                2,
+                "Second",
+                "NNP"
+            ],
+            [
+                3,
+                "World",
+                "NNP"
+            ],
+            [
+                4,
+                "War",
+                "NNP"
+            ],
+            [
+                5,
+                "the",
+                "DT"
+            ],
+            [
+                6,
+                "woman",
+                "NN"
+            ],
+            [
+                7,
+                "wage",
+                "NN"
+            ],
+            [
+                8,
+                "earner",
+                "NN"
+            ],
+            [
+                9,
+                "became",
+                "VBD"
+            ],
+            [
+                10,
+                "a",
+                "DT"
+            ],
+            [
+                11,
+                "standard",
+                "JJ"
+            ],
+            [
+                12,
+                "part",
+                "NN"
+            ],
+            [
+                13,
+                "of",
+                "IN"
+            ],
+            [
+                14,
+                "middle",
+                "JJ"
+            ],
+            [
+                15,
+                "-",
+                "HYPH"
+            ],
+            [
+                16,
+                "class",
+                "NN"
+            ],
+            [
+                17,
+                "life",
+                "NN"
+            ],
+            [
+                18,
+                "in",
+                "IN"
+            ],
+            [
+                19,
+                "the",
+                "DT"
+            ],
+            [
+                20,
+                "United",
+                "NNP"
+            ],
+            [
+                21,
+                "States",
+                "NNP"
+            ],
+            [
+                22,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "Celluloid and plastics have largely replaced genuine ivory in the manufacture like such things as buttons, billiard balls, and piano keys.",
-        "A": "have",
-        "B": "replaced",
-        "C": "in",
-        "D": "like",
-        "key_answer": "D"
+        "A": [
+            [
+                3,
+                "have",
+                "VB"
+            ]
+        ],
+        "B": [
+            [
+                5,
+                "replaced",
+                "VBD"
+            ]
+        ],
+        "C": [
+            [
+                8,
+                "in",
+                "IN"
+            ]
+        ],
+        "D": [
+            [
+                11,
+                "like",
+                "UH"
+            ]
+        ],
+        "key_answer": "D",
+        "id": 23,
+        "pos_tag": [
+            [
+                0,
+                "Celluloid",
+                "NNP"
+            ],
+            [
+                1,
+                "and",
+                "CC"
+            ],
+            [
+                2,
+                "plastics",
+                "NNS"
+            ],
+            [
+                3,
+                "have",
+                "VBP"
+            ],
+            [
+                4,
+                "largely",
+                "RB"
+            ],
+            [
+                5,
+                "replaced",
+                "VBN"
+            ],
+            [
+                6,
+                "genuine",
+                "JJ"
+            ],
+            [
+                7,
+                "ivory",
+                "NN"
+            ],
+            [
+                8,
+                "in",
+                "IN"
+            ],
+            [
+                9,
+                "the",
+                "DT"
+            ],
+            [
+                10,
+                "manufacture",
+                "NN"
+            ],
+            [
+                11,
+                "like",
+                "IN"
+            ],
+            [
+                12,
+                "such",
+                "JJ"
+            ],
+            [
+                13,
+                "things",
+                "NNS"
+            ],
+            [
+                14,
+                "as",
+                "IN"
+            ],
+            [
+                15,
+                "buttons",
+                "NNS"
+            ],
+            [
+                16,
+                ",",
+                ","
+            ],
+            [
+                17,
+                "billiard",
+                "NNP"
+            ],
+            [
+                18,
+                "balls",
+                "NNS"
+            ],
+            [
+                19,
+                ",",
+                ","
+            ],
+            [
+                20,
+                "and",
+                "CC"
+            ],
+            [
+                21,
+                "piano",
+                "NN"
+            ],
+            [
+                22,
+                "keys",
+                "NNS"
+            ],
+            [
+                23,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "One of the tenets during New Criticism is that a critic need not tell readers what to think about a story.",
-        "A": "the",
-        "B": "during",
-        "C": "is",
-        "D": "what",
-        "key_answer": "B"
+        "A": [
+            [
+                2,
+                "the",
+                "DT"
+            ]
+        ],
+        "B": [
+            [
+                4,
+                "during",
+                "IN"
+            ]
+        ],
+        "C": [
+            [
+                7,
+                "is",
+                "VBZ"
+            ]
+        ],
+        "D": [
+            [
+                15,
+                "what",
+                "WP"
+            ]
+        ],
+        "key_answer": "B",
+        "id": 24,
+        "pos_tag": [
+            [
+                0,
+                "One",
+                "CD"
+            ],
+            [
+                1,
+                "of",
+                "IN"
+            ],
+            [
+                2,
+                "the",
+                "DT"
+            ],
+            [
+                3,
+                "tenets",
+                "NNS"
+            ],
+            [
+                4,
+                "during",
+                "IN"
+            ],
+            [
+                5,
+                "New",
+                "NNP"
+            ],
+            [
+                6,
+                "Criticism",
+                "NNP"
+            ],
+            [
+                7,
+                "is",
+                "VBZ"
+            ],
+            [
+                8,
+                "that",
+                "IN"
+            ],
+            [
+                9,
+                "a",
+                "DT"
+            ],
+            [
+                10,
+                "critic",
+                "NN"
+            ],
+            [
+                11,
+                "need",
+                "MD"
+            ],
+            [
+                12,
+                "not",
+                "RB"
+            ],
+            [
+                13,
+                "tell",
+                "VB"
+            ],
+            [
+                14,
+                "readers",
+                "NNS"
+            ],
+            [
+                15,
+                "what",
+                "WP"
+            ],
+            [
+                16,
+                "to",
+                "TO"
+            ],
+            [
+                17,
+                "think",
+                "VB"
+            ],
+            [
+                18,
+                "about",
+                "IN"
+            ],
+            [
+                19,
+                "a",
+                "DT"
+            ],
+            [
+                20,
+                "story",
+                "NN"
+            ],
+            [
+                21,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "The outer ear, which included the fleshy pinna and the auditory canal, picks up and funnels sound waves toward the eardrum.",
-        "A": "The",
-        "B": "included",
-        "C": "picks",
-        "D": "toward",
-        "key_answer": "B"
+        "A": [
+            [
+                0,
+                "The",
+                "DT"
+            ]
+        ],
+        "B": [
+            [
+                5,
+                "included",
+                "VBD"
+            ]
+        ],
+        "C": [
+            [
+                14,
+                "picks",
+                "VBZ"
+            ]
+        ],
+        "D": [
+            [
+                20,
+                "toward",
+                "IN"
+            ]
+        ],
+        "key_answer": "B",
+        "id": 25,
+        "pos_tag": [
+            [
+                0,
+                "The",
+                "DT"
+            ],
+            [
+                1,
+                "outer",
+                "JJ"
+            ],
+            [
+                2,
+                "ear",
+                "NN"
+            ],
+            [
+                3,
+                ",",
+                ","
+            ],
+            [
+                4,
+                "which",
+                "WDT"
+            ],
+            [
+                5,
+                "included",
+                "VBD"
+            ],
+            [
+                6,
+                "the",
+                "DT"
+            ],
+            [
+                7,
+                "fleshy",
+                "JJ"
+            ],
+            [
+                8,
+                "pinna",
+                "NN"
+            ],
+            [
+                9,
+                "and",
+                "CC"
+            ],
+            [
+                10,
+                "the",
+                "DT"
+            ],
+            [
+                11,
+                "auditory",
+                "JJ"
+            ],
+            [
+                12,
+                "canal",
+                "NN"
+            ],
+            [
+                13,
+                ",",
+                ","
+            ],
+            [
+                14,
+                "picks",
+                "VBZ"
+            ],
+            [
+                15,
+                "up",
+                "RP"
+            ],
+            [
+                16,
+                "and",
+                "CC"
+            ],
+            [
+                17,
+                "funnels",
+                "VBZ"
+            ],
+            [
+                18,
+                "sound",
+                "VBP"
+            ],
+            [
+                19,
+                "waves",
+                "NNS"
+            ],
+            [
+                20,
+                "toward",
+                "IN"
+            ],
+            [
+                21,
+                "the",
+                "DT"
+            ],
+            [
+                22,
+                "eardrum",
+                "NN"
+            ],
+            [
+                23,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "An chair may be the oldest type of furniture, although its importance has varied from time to time and from country to country.",
-        "A": "An",
-        "B": "of",
-        "C": "although",
-        "D": "varied",
-        "key_answer": "A"
+        "A": [
+            [
+                0,
+                "An",
+                "DT"
+            ]
+        ],
+        "B": [
+            [
+                7,
+                "of",
+                "IN"
+            ]
+        ],
+        "C": [
+            [
+                10,
+                "although",
+                "IN"
+            ]
+        ],
+        "D": [
+            [
+                14,
+                "varied",
+                "VBD"
+            ]
+        ],
+        "key_answer": "A",
+        "id": 26,
+        "pos_tag": [
+            [
+                0,
+                "An",
+                "DT"
+            ],
+            [
+                1,
+                "chair",
+                "NN"
+            ],
+            [
+                2,
+                "may",
+                "MD"
+            ],
+            [
+                3,
+                "be",
+                "VB"
+            ],
+            [
+                4,
+                "the",
+                "DT"
+            ],
+            [
+                5,
+                "oldest",
+                "JJS"
+            ],
+            [
+                6,
+                "type",
+                "NN"
+            ],
+            [
+                7,
+                "of",
+                "IN"
+            ],
+            [
+                8,
+                "furniture",
+                "NN"
+            ],
+            [
+                9,
+                ",",
+                ","
+            ],
+            [
+                10,
+                "although",
+                "IN"
+            ],
+            [
+                11,
+                "its",
+                "PRP$"
+            ],
+            [
+                12,
+                "importance",
+                "NN"
+            ],
+            [
+                13,
+                "has",
+                "VBZ"
+            ],
+            [
+                14,
+                "varied",
+                "VBN"
+            ],
+            [
+                15,
+                "from",
+                "IN"
+            ],
+            [
+                16,
+                "time",
+                "NN"
+            ],
+            [
+                17,
+                "to",
+                "IN"
+            ],
+            [
+                18,
+                "time",
+                "NN"
+            ],
+            [
+                19,
+                "and",
+                "CC"
+            ],
+            [
+                20,
+                "from",
+                "IN"
+            ],
+            [
+                21,
+                "country",
+                "NN"
+            ],
+            [
+                22,
+                "to",
+                "IN"
+            ],
+            [
+                23,
+                "country",
+                "NN"
+            ],
+            [
+                24,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "When wood, natural gas, oil, or any other fuel burns, substances in the fuel was combined with oxygen in the air to produce heat.",
-        "A": "in",
-        "B": "was",
-        "C": "with",
-        "D": "produce",
-        "key_answer": "B"
+        "A": [
+            [
+                15,
+                "in",
+                "IN"
+            ]
+        ],
+        "B": [
+            [
+                18,
+                "was",
+                "VBD"
+            ]
+        ],
+        "C": [
+            [
+                20,
+                "with",
+                "IN"
+            ]
+        ],
+        "D": [
+            [
+                26,
+                "produce",
+                "VB"
+            ]
+        ],
+        "key_answer": "B",
+        "id": 27,
+        "pos_tag": [
+            [
+                0,
+                "When",
+                "WRB"
+            ],
+            [
+                1,
+                "wood",
+                "NN"
+            ],
+            [
+                2,
+                ",",
+                ","
+            ],
+            [
+                3,
+                "natural",
+                "JJ"
+            ],
+            [
+                4,
+                "gas",
+                "NN"
+            ],
+            [
+                5,
+                ",",
+                ","
+            ],
+            [
+                6,
+                "oil",
+                "NN"
+            ],
+            [
+                7,
+                ",",
+                ","
+            ],
+            [
+                8,
+                "or",
+                "CC"
+            ],
+            [
+                9,
+                "any",
+                "DT"
+            ],
+            [
+                10,
+                "other",
+                "JJ"
+            ],
+            [
+                11,
+                "fuel",
+                "NN"
+            ],
+            [
+                12,
+                "burns",
+                "NNS"
+            ],
+            [
+                13,
+                ",",
+                ","
+            ],
+            [
+                14,
+                "substances",
+                "NNS"
+            ],
+            [
+                15,
+                "in",
+                "IN"
+            ],
+            [
+                16,
+                "the",
+                "DT"
+            ],
+            [
+                17,
+                "fuel",
+                "NN"
+            ],
+            [
+                18,
+                "was",
+                "VBD"
+            ],
+            [
+                19,
+                "combined",
+                "VBN"
+            ],
+            [
+                20,
+                "with",
+                "IN"
+            ],
+            [
+                21,
+                "oxygen",
+                "NN"
+            ],
+            [
+                22,
+                "in",
+                "IN"
+            ],
+            [
+                23,
+                "the",
+                "DT"
+            ],
+            [
+                24,
+                "air",
+                "NN"
+            ],
+            [
+                25,
+                "to",
+                "TO"
+            ],
+            [
+                26,
+                "produce",
+                "VB"
+            ],
+            [
+                27,
+                "heat",
+                "NN"
+            ],
+            [
+                28,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "Deserts are arid land areas where more water was lost through evaporation than is gained through precipitation.",
-        "A": "are",
-        "B": "land",
-        "C": "was",
-        "D": "lost",
-        "key_answer": "C"
+        "A": [
+            [
+                1,
+                "are",
+                "VBP"
+            ]
+        ],
+        "B": [
+            [
+                3,
+                "land",
+                "NN"
+            ]
+        ],
+        "C": [
+            [
+                8,
+                "was",
+                "VBD"
+            ]
+        ],
+        "D": [
+            [
+                9,
+                "lost",
+                "VBD"
+            ]
+        ],
+        "key_answer": "C",
+        "id": 28,
+        "pos_tag": [
+            [
+                0,
+                "Deserts",
+                "NNS"
+            ],
+            [
+                1,
+                "are",
+                "VBP"
+            ],
+            [
+                2,
+                "arid",
+                "JJ"
+            ],
+            [
+                3,
+                "land",
+                "NN"
+            ],
+            [
+                4,
+                "areas",
+                "NNS"
+            ],
+            [
+                5,
+                "where",
+                "WRB"
+            ],
+            [
+                6,
+                "more",
+                "JJR"
+            ],
+            [
+                7,
+                "water",
+                "NN"
+            ],
+            [
+                8,
+                "was",
+                "VBD"
+            ],
+            [
+                9,
+                "lost",
+                "VBN"
+            ],
+            [
+                10,
+                "through",
+                "IN"
+            ],
+            [
+                11,
+                "evaporation",
+                "NN"
+            ],
+            [
+                12,
+                "than",
+                "IN"
+            ],
+            [
+                13,
+                "is",
+                "VBZ"
+            ],
+            [
+                14,
+                "gained",
+                "VBN"
+            ],
+            [
+                15,
+                "through",
+                "IN"
+            ],
+            [
+                16,
+                "precipitation",
+                "NN"
+            ],
+            [
+                17,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "When goshawk chicks are young, both parents had shared in the hunting duties and in guarding the nest.",
-        "A": "goshawk",
-        "B": "are",
-        "C": "had shared",
-        "D": "the",
-        "key_answer": "C"
+        "A": [
+            [
+                1,
+                "goshawk",
+                "VB"
+            ]
+        ],
+        "B": [
+            [
+                3,
+                "are",
+                "VBP"
+            ]
+        ],
+        "C": [
+            [
+                8,
+                "had",
+                "VBD"
+            ],
+            [
+                9,
+                "shared",
+                "VBN"
+            ]
+        ],
+        "D": [
+            [
+                11,
+                "the",
+                "DT"
+            ]
+        ],
+        "key_answer": "C",
+        "id": 29,
+        "pos_tag": [
+            [
+                0,
+                "When",
+                "WRB"
+            ],
+            [
+                1,
+                "goshawk",
+                "NN"
+            ],
+            [
+                2,
+                "chicks",
+                "NNS"
+            ],
+            [
+                3,
+                "are",
+                "VBP"
+            ],
+            [
+                4,
+                "young",
+                "JJ"
+            ],
+            [
+                5,
+                ",",
+                ","
+            ],
+            [
+                6,
+                "both",
+                "DT"
+            ],
+            [
+                7,
+                "parents",
+                "NNS"
+            ],
+            [
+                8,
+                "had",
+                "VBD"
+            ],
+            [
+                9,
+                "shared",
+                "VBN"
+            ],
+            [
+                10,
+                "in",
+                "IN"
+            ],
+            [
+                11,
+                "the",
+                "DT"
+            ],
+            [
+                12,
+                "hunting",
+                "NN"
+            ],
+            [
+                13,
+                "duties",
+                "NNS"
+            ],
+            [
+                14,
+                "and",
+                "CC"
+            ],
+            [
+                15,
+                "in",
+                "IN"
+            ],
+            [
+                16,
+                "guarding",
+                "VBG"
+            ],
+            [
+                17,
+                "the",
+                "DT"
+            ],
+            [
+                18,
+                "nest",
+                "NN"
+            ],
+            [
+                19,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "Not only is whales among the largest animals that ever lived, but they are also among the most intelligent.",
-        "A": "is",
-        "B": "that",
-        "C": "are",
-        "D": "the",
-        "key_answer": "A"
+        "A": [
+            [
+                2,
+                "is",
+                "VBZ"
+            ]
+        ],
+        "B": [
+            [
+                8,
+                "that",
+                "DT"
+            ]
+        ],
+        "C": [
+            [
+                14,
+                "are",
+                "VBP"
+            ]
+        ],
+        "D": [
+            [
+                17,
+                "the",
+                "DT"
+            ]
+        ],
+        "key_answer": "A",
+        "id": 30,
+        "pos_tag": [
+            [
+                0,
+                "Not",
+                "RB"
+            ],
+            [
+                1,
+                "only",
+                "RB"
+            ],
+            [
+                2,
+                "is",
+                "VBZ"
+            ],
+            [
+                3,
+                "whales",
+                "NNS"
+            ],
+            [
+                4,
+                "among",
+                "IN"
+            ],
+            [
+                5,
+                "the",
+                "DT"
+            ],
+            [
+                6,
+                "largest",
+                "JJS"
+            ],
+            [
+                7,
+                "animals",
+                "NNS"
+            ],
+            [
+                8,
+                "that",
+                "WDT"
+            ],
+            [
+                9,
+                "ever",
+                "RB"
+            ],
+            [
+                10,
+                "lived",
+                "VBD"
+            ],
+            [
+                11,
+                ",",
+                ","
+            ],
+            [
+                12,
+                "but",
+                "CC"
+            ],
+            [
+                13,
+                "they",
+                "PRP"
+            ],
+            [
+                14,
+                "are",
+                "VBP"
+            ],
+            [
+                15,
+                "also",
+                "RB"
+            ],
+            [
+                16,
+                "among",
+                "IN"
+            ],
+            [
+                17,
+                "the",
+                "DT"
+            ],
+            [
+                18,
+                "most",
+                "RBS"
+            ],
+            [
+                19,
+                "intelligent",
+                "JJ"
+            ],
+            [
+                20,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "Fish are the most ancient form of vertebrate life, and from them have evolved all other vertebrates.",
-        "A": "are",
-        "B": "ancient",
-        "C": "of",
-        "D": "have evolved",
-        "key_answer": "D"
+        "A": [
+            [
+                1,
+                "are",
+                "VBP"
+            ]
+        ],
+        "B": [
+            [
+                4,
+                "ancient",
+                "JJ"
+            ]
+        ],
+        "C": [
+            [
+                6,
+                "of",
+                "IN"
+            ]
+        ],
+        "D": [
+            [
+                13,
+                "have",
+                "VBP"
+            ],
+            [
+                14,
+                "evolved",
+                "VBN"
+            ]
+        ],
+        "key_answer": "D",
+        "id": 31,
+        "pos_tag": [
+            [
+                0,
+                "Fish",
+                "NNS"
+            ],
+            [
+                1,
+                "are",
+                "VBP"
+            ],
+            [
+                2,
+                "the",
+                "DT"
+            ],
+            [
+                3,
+                "most",
+                "RBS"
+            ],
+            [
+                4,
+                "ancient",
+                "JJ"
+            ],
+            [
+                5,
+                "form",
+                "NN"
+            ],
+            [
+                6,
+                "of",
+                "IN"
+            ],
+            [
+                7,
+                "vertebrate",
+                "JJ"
+            ],
+            [
+                8,
+                "life",
+                "NN"
+            ],
+            [
+                9,
+                ",",
+                ","
+            ],
+            [
+                10,
+                "and",
+                "CC"
+            ],
+            [
+                11,
+                "from",
+                "IN"
+            ],
+            [
+                12,
+                "them",
+                "PRP"
+            ],
+            [
+                13,
+                "have",
+                "VBP"
+            ],
+            [
+                14,
+                "evolved",
+                "VBN"
+            ],
+            [
+                15,
+                "all",
+                "DT"
+            ],
+            [
+                16,
+                "other",
+                "JJ"
+            ],
+            [
+                17,
+                "vertebrates",
+                "NNS"
+            ],
+            [
+                18,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "There is about 350 species of sharks, and although they are all carnivorous, only a few species will attack people.",
-        "A": "is",
-        "B": "about",
-        "C": "are",
-        "D": "all",
-        "key_answer": "A"
+        "A": [
+            [
+                1,
+                "is",
+                "VBZ"
+            ]
+        ],
+        "B": [
+            [
+                2,
+                "about",
+                "RB"
+            ]
+        ],
+        "C": [
+            [
+                11,
+                "are",
+                "VBP"
+            ]
+        ],
+        "D": [
+            [
+                12,
+                "all",
+                "DT"
+            ]
+        ],
+        "key_answer": "A",
+        "id": 32,
+        "pos_tag": [
+            [
+                0,
+                "There",
+                "EX"
+            ],
+            [
+                1,
+                "is",
+                "VBZ"
+            ],
+            [
+                2,
+                "about",
+                "RB"
+            ],
+            [
+                3,
+                "350",
+                "CD"
+            ],
+            [
+                4,
+                "species",
+                "NNS"
+            ],
+            [
+                5,
+                "of",
+                "IN"
+            ],
+            [
+                6,
+                "sharks",
+                "NNS"
+            ],
+            [
+                7,
+                ",",
+                ","
+            ],
+            [
+                8,
+                "and",
+                "CC"
+            ],
+            [
+                9,
+                "although",
+                "IN"
+            ],
+            [
+                10,
+                "they",
+                "PRP"
+            ],
+            [
+                11,
+                "are",
+                "VBP"
+            ],
+            [
+                12,
+                "all",
+                "RB"
+            ],
+            [
+                13,
+                "carnivorous",
+                "JJ"
+            ],
+            [
+                14,
+                ",",
+                ","
+            ],
+            [
+                15,
+                "only",
+                "RB"
+            ],
+            [
+                16,
+                "a",
+                "DT"
+            ],
+            [
+                17,
+                "few",
+                "JJ"
+            ],
+            [
+                18,
+                "species",
+                "NNS"
+            ],
+            [
+                19,
+                "will",
+                "MD"
+            ],
+            [
+                20,
+                "attack",
+                "VB"
+            ],
+            [
+                21,
+                "people",
+                "NNS"
+            ],
+            [
+                22,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "In the United States, there are many holidays throughout a year.",
-        "A": "the",
-        "B": "there",
-        "C": "many",
-        "D": "a",
-        "key_answer": "D"
+        "A": [
+            [
+                1,
+                "the",
+                "DT"
+            ]
+        ],
+        "B": [
+            [
+                5,
+                "there",
+                "RB"
+            ]
+        ],
+        "C": [
+            [
+                7,
+                "many",
+                "JJ"
+            ]
+        ],
+        "D": [
+            [
+                10,
+                "a",
+                "DT"
+            ]
+        ],
+        "key_answer": "D",
+        "id": 33,
+        "pos_tag": [
+            [
+                0,
+                "In",
+                "IN"
+            ],
+            [
+                1,
+                "the",
+                "DT"
+            ],
+            [
+                2,
+                "United",
+                "NNP"
+            ],
+            [
+                3,
+                "States",
+                "NNP"
+            ],
+            [
+                4,
+                ",",
+                ","
+            ],
+            [
+                5,
+                "there",
+                "EX"
+            ],
+            [
+                6,
+                "are",
+                "VBP"
+            ],
+            [
+                7,
+                "many",
+                "JJ"
+            ],
+            [
+                8,
+                "holidays",
+                "NNS"
+            ],
+            [
+                9,
+                "throughout",
+                "IN"
+            ],
+            [
+                10,
+                "a",
+                "DT"
+            ],
+            [
+                11,
+                "year",
+                "NN"
+            ],
+            [
+                12,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "Tomatoes growing all year long in Florida.",
-        "A": "Tomatoes",
-        "B": "growing",
-        "C": "all",
-        "D": "in",
-        "key_answer": "B"
+        "A": [
+            [
+                0,
+                "Tomatoes",
+                "NNS"
+            ]
+        ],
+        "B": [
+            [
+                1,
+                "growing",
+                "VBG"
+            ]
+        ],
+        "C": [
+            [
+                2,
+                "all",
+                "DT"
+            ]
+        ],
+        "D": [
+            [
+                5,
+                "in",
+                "IN"
+            ]
+        ],
+        "key_answer": "B",
+        "id": 34,
+        "pos_tag": [
+            [
+                0,
+                "Tomatoes",
+                "NNS"
+            ],
+            [
+                1,
+                "growing",
+                "VBG"
+            ],
+            [
+                2,
+                "all",
+                "DT"
+            ],
+            [
+                3,
+                "year",
+                "NN"
+            ],
+            [
+                4,
+                "long",
+                "RB"
+            ],
+            [
+                5,
+                "in",
+                "IN"
+            ],
+            [
+                6,
+                "Florida",
+                "NNP"
+            ],
+            [
+                7,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "Even thinks my aunt lost the beauty contest she is still the prettiest of all the other contestants.",
-        "A": "thinks",
-        "B": "lost",
-        "C": "is",
-        "D": "prettiest",
-        "key_answer": "A"
+        "A": [
+            [
+                1,
+                "thinks",
+                "VBZ"
+            ]
+        ],
+        "B": [
+            [
+                4,
+                "lost",
+                "VBD"
+            ]
+        ],
+        "C": [
+            [
+                9,
+                "is",
+                "VBZ"
+            ]
+        ],
+        "D": [
+            [
+                12,
+                "prettiest",
+                "NN"
+            ]
+        ],
+        "key_answer": "A",
+        "id": 35,
+        "pos_tag": [
+            [
+                0,
+                "Even",
+                "RB"
+            ],
+            [
+                1,
+                "thinks",
+                "VBZ"
+            ],
+            [
+                2,
+                "my",
+                "PRP$"
+            ],
+            [
+                3,
+                "aunt",
+                "NN"
+            ],
+            [
+                4,
+                "lost",
+                "VBD"
+            ],
+            [
+                5,
+                "the",
+                "DT"
+            ],
+            [
+                6,
+                "beauty",
+                "NN"
+            ],
+            [
+                7,
+                "contest",
+                "NN"
+            ],
+            [
+                8,
+                "she",
+                "PRP"
+            ],
+            [
+                9,
+                "is",
+                "VBZ"
+            ],
+            [
+                10,
+                "still",
+                "RB"
+            ],
+            [
+                11,
+                "the",
+                "DT"
+            ],
+            [
+                12,
+                "prettiest",
+                "NN"
+            ],
+            [
+                13,
+                "of",
+                "IN"
+            ],
+            [
+                14,
+                "all",
+                "PDT"
+            ],
+            [
+                15,
+                "the",
+                "DT"
+            ],
+            [
+                16,
+                "other",
+                "JJ"
+            ],
+            [
+                17,
+                "contestants",
+                "NNS"
+            ],
+            [
+                18,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "The thief who stole my watch was compelling to restore it again.",
-        "A": "who",
-        "B": "compelling",
-        "C": "to",
-        "D": "it",
-        "key_answer": "B"
+        "A": [
+            [
+                2,
+                "who",
+                "WP"
+            ]
+        ],
+        "B": [
+            [
+                7,
+                "compelling",
+                "JJ"
+            ]
+        ],
+        "C": [
+            [
+                8,
+                "to",
+                "TO"
+            ]
+        ],
+        "D": [
+            [
+                10,
+                "it",
+                "PRP"
+            ]
+        ],
+        "key_answer": "B",
+        "id": 36,
+        "pos_tag": [
+            [
+                0,
+                "The",
+                "DT"
+            ],
+            [
+                1,
+                "thief",
+                "NN"
+            ],
+            [
+                2,
+                "who",
+                "WP"
+            ],
+            [
+                3,
+                "stole",
+                "VBD"
+            ],
+            [
+                4,
+                "my",
+                "PRP$"
+            ],
+            [
+                5,
+                "watch",
+                "NN"
+            ],
+            [
+                6,
+                "was",
+                "VBD"
+            ],
+            [
+                7,
+                "compelling",
+                "JJ"
+            ],
+            [
+                8,
+                "to",
+                "TO"
+            ],
+            [
+                9,
+                "restore",
+                "VB"
+            ],
+            [
+                10,
+                "it",
+                "PRP"
+            ],
+            [
+                11,
+                "again",
+                "RB"
+            ],
+            [
+                12,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "I try to figuring out the answer of what the function of the organization is.",
-        "A": "figuring",
-        "B": "of",
-        "C": "what",
-        "D": "is",
-        "key_answer": "A"
+        "A": [
+            [
+                3,
+                "figuring",
+                "VBG"
+            ]
+        ],
+        "B": [
+            [
+                7,
+                "of",
+                "IN"
+            ]
+        ],
+        "C": [
+            [
+                8,
+                "what",
+                "WP"
+            ]
+        ],
+        "D": [
+            [
+                14,
+                "is",
+                "VBZ"
+            ]
+        ],
+        "key_answer": "A",
+        "id": 37,
+        "pos_tag": [
+            [
+                0,
+                "I",
+                "PRP"
+            ],
+            [
+                1,
+                "try",
+                "VBP"
+            ],
+            [
+                2,
+                "to",
+                "IN"
+            ],
+            [
+                3,
+                "figuring",
+                "VBG"
+            ],
+            [
+                4,
+                "out",
+                "RP"
+            ],
+            [
+                5,
+                "the",
+                "DT"
+            ],
+            [
+                6,
+                "answer",
+                "NN"
+            ],
+            [
+                7,
+                "of",
+                "IN"
+            ],
+            [
+                8,
+                "what",
+                "WP"
+            ],
+            [
+                9,
+                "the",
+                "DT"
+            ],
+            [
+                10,
+                "function",
+                "NN"
+            ],
+            [
+                11,
+                "of",
+                "IN"
+            ],
+            [
+                12,
+                "the",
+                "DT"
+            ],
+            [
+                13,
+                "organization",
+                "NN"
+            ],
+            [
+                14,
+                "is",
+                "VBZ"
+            ],
+            [
+                15,
+                ".",
+                "."
+            ]
+        ]
     },
     {
         "question_text": "The huge have increased in popularity of specialty coffees has contributed to the success of Starbucks, Barney\u2019s and other coffee purveyors.",
-        "A": "huge",
-        "B": "have increased",
-        "C": "contributed",
-        "D": "and",
-        "key_answer": "B"
+        "A": [
+            [
+                1,
+                "huge",
+                "JJ"
+            ]
+        ],
+        "B": [
+            [
+                2,
+                "have",
+                "VBP"
+            ],
+            [
+                3,
+                "increased",
+                "VBN"
+            ]
+        ],
+        "C": [
+            [
+                10,
+                "contributed",
+                "VBD"
+            ]
+        ],
+        "D": [
+            [
+                19,
+                "and",
+                "CC"
+            ]
+        ],
+        "key_answer": "B",
+        "id": 38,
+        "pos_tag": [
+            [
+                0,
+                "The",
+                "DT"
+            ],
+            [
+                1,
+                "huge",
+                "JJ"
+            ],
+            [
+                2,
+                "have",
+                "VBP"
+            ],
+            [
+                3,
+                "increased",
+                "VBN"
+            ],
+            [
+                4,
+                "in",
+                "IN"
+            ],
+            [
+                5,
+                "popularity",
+                "NN"
+            ],
+            [
+                6,
+                "of",
+                "IN"
+            ],
+            [
+                7,
+                "specialty",
+                "NN"
+            ],
+            [
+                8,
+                "coffees",
+                "NNS"
+            ],
+            [
+                9,
+                "has",
+                "VBZ"
+            ],
+            [
+                10,
+                "contributed",
+                "VBN"
+            ],
+            [
+                11,
+                "to",
+                "IN"
+            ],
+            [
+                12,
+                "the",
+                "DT"
+            ],
+            [
+                13,
+                "success",
+                "NN"
+            ],
+            [
+                14,
+                "of",
+                "IN"
+            ],
+            [
+                15,
+                "Starbucks",
+                "NNP"
+            ],
+            [
+                16,
+                ",",
+                ","
+            ],
+            [
+                17,
+                "Barney",
+                "NNP"
+            ],
+            [
+                18,
+                "\u2019s",
+                "POS"
+            ],
+            [
+                19,
+                "and",
+                "CC"
+            ],
+            [
+                20,
+                "other",
+                "JJ"
+            ],
+            [
+                21,
+                "coffee",
+                "NN"
+            ],
+            [
+                22,
+                "purveyors",
+                "NNS"
+            ],
+            [
+                23,
+                ".",
+                "."
+            ]
+        ]
     }
 ]
