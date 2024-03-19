@@ -14,7 +14,7 @@ except SystemExit:
     parser.print_help()
     exit(1)
 
-filename = os.path.splitext(str(args.input_file))[0]
+filename = os.path.splitext(str(args.filename))[0]
 nlp = spacy.load("en_core_web_sm")
 data = csv_to_json(filename)
 
