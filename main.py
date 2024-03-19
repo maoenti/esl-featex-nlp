@@ -7,7 +7,7 @@ import json
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--input_file", help="Input file name in data/ folder (.csv)", required=True)
+parser.add_argument("-f", "--filename", help="Input file name in data/ folder (.csv)", required=True)
 try:
     args = parser.parse_args()
 except SystemExit:
