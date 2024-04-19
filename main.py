@@ -27,5 +27,5 @@ path = os.path.join(os.getcwd(), 'data', f'{filename}_preprocessed.json')
 print('Start feature extraction...')
 with open(path, 'r') as f:
     data = json.load(f)
-    featex = extract_features(data, filename)
+    featex = extract_features(data, filename, nlp)
 print('Done')
