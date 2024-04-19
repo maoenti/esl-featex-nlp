@@ -23,9 +23,9 @@ preprocess = DataPreprocess(data, nlp, filename)
 preprocess.start()
 print('Done')
 
-path = os.path.join(os.getcwd(), 'data', f'{filename}.json')
+path = os.path.join(os.getcwd(), 'data', f'{filename}_preprocessed.json')
 print('Start feature extraction...')
 with open(path, 'r') as f:
     data = json.load(f)
-    featex = extract_features(data)
+    featex = extract_features(data, filename)
 print('Done')

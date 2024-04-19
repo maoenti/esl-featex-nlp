@@ -53,5 +53,5 @@ class DataPreprocess():
                 data[opt] = self.pos_tag(data[opt])
             self.get_underlines(data)
             counter += 1
-        set_training_data(self.filename, self.data)
+        set_training_data(f'{self.filename}_preprocessed', self.data)
         return self.data

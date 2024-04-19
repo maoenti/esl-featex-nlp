@@ -2,7 +2,7 @@ from src.models.feature_extraction_v2 import FeatureExtractionV2
 from src.utils.file_handling import set_training_data
 import spacy
 
-def extract_features(data):
+def extract_features(data, filename):
     nlp = spacy.load("en_core_web_sm")
     extracted_features = []
     for item in data:
@@ -39,7 +39,7 @@ def extract_features(data):
         response['level3'] = level3
         response['level2'] = check_level2(level3)
         extracted_features.append(response)
-    set_training_data('feature_extraction_v2', extracted_features)
+    set_training_data(f'{filename}_features', extracted_features)
 
     return extracted_features
 
