@@ -16,6 +16,7 @@ class FeatureExtractionV2:
         response['v7'] = False
         response['v8'] = False
         response['v9'] = False
+        response['v10'] = False
 
         for token in doc:
             for opt in options:
@@ -45,6 +46,9 @@ class FeatureExtractionV2:
 
                     if not response['v9']:
                         response['v9'] = self.have_participle(token, item)
+
+                    if not response['v10']:
+                        response['v10'] = self.auxiliary_verbs(token, item)
         return response
     
     def main_verbs(self, token, opt_item):
@@ -116,5 +120,13 @@ class FeatureExtractionV2:
                 for child in token.children:
                     if child.text.lower() == 'have':
                         return True
+        return False
+    
+    def auxiliary_verbs(self, token, opt_item):
+        if token.pos_ == 'VERB':
+            for child in token.children:
+                if child.dep_ == 'aux' and (opt_item[1] == token.text or opt_item[1] == child.text):
+                    print(f'child: {child.text}\ntoken: {token.text}')
+                    return True
         return False
     
