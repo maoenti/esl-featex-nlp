@@ -15,6 +15,7 @@ class FeatureExtractionV2:
         response['v6'] = False
         response['v7'] = False
         response['v8'] = False
+        response['v9'] = False
 
         for token in doc:
             for opt in options:
@@ -41,6 +42,9 @@ class FeatureExtractionV2:
                         response['v7'] = passives[0]
                     if not response['v8']:
                         response['v8'] = passives[1]
+
+                    if not response['v9']:
+                        response['v9'] = self.have_participle(token, item)
         return response
     
     def main_verbs(self, token, opt_item):
@@ -105,4 +109,12 @@ class FeatureExtractionV2:
             if token.text.lower() == 'it':
                 v8 = True
         return v7, v8
+
+    def have_participle(self, token, opt_item):
+        if token.pos_ == 'VERB':
+            if token.text == opt_item[1]:
+                for child in token.children:
+                    if child.text.lower() == 'have':
+                        return True
+        return False
     
