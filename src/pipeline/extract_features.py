@@ -1,4 +1,4 @@
-from src.models.feature_extraction_v2 import FeatureExtractionV2
+from src.models.feature_extraction_v1 import FeatureExtractionV1
 from src.utils.file_handling import set_training_data
 import spacy
 
@@ -10,7 +10,7 @@ def extract_features(data, filename, nlp):
         level2 = {}
 
         response['question_text'] = item['question_text']
-        featex_v2 = FeatureExtractionV2(item, nlp)
+        featex_v2 = FeatureExtractionV1(item, nlp)
         opt_tags = featex_v2.option_tags()
         level3['v1'] = opt_tags['v1']
         level3['v2'] = opt_tags['v2']
