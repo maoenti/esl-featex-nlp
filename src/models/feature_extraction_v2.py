@@ -12,6 +12,7 @@ class FeatureExtractionV2:
         response['v3'] = False
         response['v4'] = False
         response['v5'] = False
+        response['v6'] = False
 
         for token in doc:
             for opt in options:
@@ -29,6 +30,9 @@ class FeatureExtractionV2:
                         response['v4'] = tense[0]
                     if not response['v5']:
                         response['v5'] = tense[1]
+
+                    if not response['v6']:
+                        response['v6'] = self.infinitives(token, item)
         return response
     
     def main_verbs(self, token, opt_item):
@@ -74,4 +78,11 @@ class FeatureExtractionV2:
     def irregular_past(self, token, opt_item):
         if token.tag_ == 'VBD' and token.text == opt_item[1]:
             return True
+        return False
+    
+    def infinitives(self, token, opt_item):
+        if token.pos_ == 'VERB':
+            for child in token.children:
+                if child.tag_ == 'TO' and (child.text == opt_item[1] or token.text == opt_item[1]):
+                    return True
         return False
