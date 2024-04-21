@@ -13,6 +13,7 @@ class FeatureExtractionV2:
         response['v4'] = False
         response['v5'] = False
         response['v6'] = False
+        response['v7'] = False
 
         for token in doc:
             for opt in options:
@@ -33,6 +34,9 @@ class FeatureExtractionV2:
 
                     if not response['v6']:
                         response['v6'] = self.infinitives(token, item)
+
+                    if not response['v7']:
+                        response['v7'] = self.passives(token, item)
         return response
     
     def main_verbs(self, token, opt_item):
@@ -86,3 +90,11 @@ class FeatureExtractionV2:
                 if child.tag_ == 'TO' and (child.text == opt_item[1] or token.text == opt_item[1]):
                     return True
         return False
+    
+    def passives(self, token, opt_item):
+        v6 = False
+        passive = ['auxpass', 'nsubjpass', 'csubjpass']
+        if token.dep_ in passive:
+            v6 = True
+        return v6
+    
