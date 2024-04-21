@@ -38,8 +38,10 @@ class FeatureExtractionV2:
 
         if token.pos_ == 'VERB':
             v1 = self.is_main_verb(token, opt_item)
-            v2 = self.req_infinitive(token, opt_item)
-            v3 = self.req_ing(token, opt_item)
+            if v1:
+                for child in token.children:
+                    v2 = self.req_infinitive(child, opt_item)
+                    v3 = self.req_ing(child, opt_item)
         return [v1, v2, v3]
     
     def is_main_verb(self, token, opt_item):
@@ -48,7 +50,7 @@ class FeatureExtractionV2:
         return False
 
     def req_infinitive(self, token, opt_item):
-        if token.tag_ != 'VBG':
+        if token.tag_ != 'VBG' and token.pos_ == 'VERB':
             for item in token.children:
                 if item.tag_ == 'TO' and (opt_item[1] == item.text or opt_item[1] == token.text):
                     return True
