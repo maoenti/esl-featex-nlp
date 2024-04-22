@@ -17,6 +17,9 @@ class FeatureExtractionV2:
         response['v8'] = False
         response['v9'] = False
         response['v10'] = False
+        response['pro1'] = False
+        response['pro2'] = False
+        response['pro3'] = False
 
         for token in doc:
             for opt in options:
@@ -49,6 +52,14 @@ class FeatureExtractionV2:
 
                     if not response['v10']:
                         response['v10'] = self.auxiliary_verbs(token, item)
+                    
+                    pronouns = self.pronouns(token, item)
+                    if not response['pro1']:
+                        response['pro1'] = pronouns[0]
+                    if not response['pro2']:
+                        response['pro2'] = pronouns[1]
+                    if not response['pro3']:
+                        response['pro3'] = pronouns[2]
         return response
     
     def main_verbs(self, token, opt_item):
@@ -126,7 +137,32 @@ class FeatureExtractionV2:
         if token.pos_ == 'VERB':
             for child in token.children:
                 if child.dep_ == 'aux' and (opt_item[1] == token.text or opt_item[1] == child.text):
-                    print(f'child: {child.text}\ntoken: {token.text}')
+                    return True
+        return False
+
+    def pronouns(self, token, opt_item):
+        pro1 = False
+        pro2 = False
+        pro3 = False
+
+        if token.tag_.startswith('PRP'):
+            if token.text == opt_item[1]:
+                pro1 = True
+        pro2 = self.object_pronouns(token, opt_item)
+        pro3 = self.relative_pronouns(token, opt_item)
+
+        return pro1, pro2, pro3
+
+    def object_pronouns(self, token, opt_item):
+        if token.dep_ == 'pobj':
+            for anc in token.ancestors:
+                if anc.tag_ == 'IN' and (anc.text == opt_item[1] or token.text == opt_item[1]):
                     return True
         return False
     
+    def relative_pronouns(self, token, opt_item):
+        relative_pronouns_words = ["who", "whom", "whose", "which", "that", "where"]
+        if token.dep_ == "relcl":
+            if opt_item[1].lower() in relative_pronouns_words:
+                return True
+        return False
