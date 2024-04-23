@@ -20,6 +20,9 @@ class FeatureExtractionV2:
         response['pro1'] = False
         response['pro2'] = False
         response['pro3'] = False
+        response['n1'] = False
+        response['n2'] = False
+        response['n3'] = False
 
         for token in doc:
             for opt in options:
@@ -60,6 +63,14 @@ class FeatureExtractionV2:
                         response['pro2'] = pronouns[1]
                     if not response['pro3']:
                         response['pro3'] = pronouns[2]
+
+                    nouns = self.nouns(token, item)
+                    if not response['n1']:
+                        response['n1'] = nouns[0]
+                    if not response['n2']:
+                        response['n2'] = nouns[1]
+                    if not response['n3']:
+                        response['n3'] = nouns[2]
         return response
     
     def main_verbs(self, token, opt_item):
@@ -165,4 +176,23 @@ class FeatureExtractionV2:
         if token.dep_ == "relcl":
             if opt_item[1].lower() in relative_pronouns_words:
                 return True
+        return False
+    
+    def nouns(self, token, opt_item):
+        n1 = False
+        if token.pos_ == 'NOUN':
+            n1 = True
+        n2 = self.infinitive_ing_subject(token, opt_item)
+        n3 = self.nominal_that_clause(token, opt_item)
+        return n1, n2, n3
+    
+    def infinitive_ing_subject(self, token, opt_item):
+        subject = ['csubj', 'csubjpass']
+        if token.dep_ in subject and token.text == opt_item[1]:
+            return True
+        return False
+    
+    def nominal_that_clause(self, token, opt_item):
+        if token.dep_ == 'mark' and token.text == opt_item[1] and token.text.lower() == 'that':
+            return True
         return False
