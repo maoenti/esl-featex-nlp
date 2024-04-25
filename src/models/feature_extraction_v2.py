@@ -25,6 +25,8 @@ class FeatureExtractionV2:
         response['n3'] = False
         response['a1'] = False
         response['a2'] = False
+        response['a3'] = False
+        response['a4'] = False
 
         for token in doc:
             for opt in options:
@@ -79,6 +81,10 @@ class FeatureExtractionV2:
                         response['a1'] = adj[0]
                     if not response['a2']:
                         response['a2'] = adj[1]
+                    if not response['a3']:
+                        response['a3'] = adj[2]
+                    if not response['a4']:
+                        response['a4'] = adj[3]
         return response
     
     def main_verbs(self, token, opt_item):
@@ -208,8 +214,10 @@ class FeatureExtractionV2:
     def adjectives(self, token, opt_item):
         a1 = self.noun_qualifying_phrases(token, opt_item)
         a2 = self.no_mean_not_any(token, opt_item)
+        a3 = self.adjective_noun(token, opt_item)
+        a4 = self.adjective_so(token, opt_item)
 
-        return a1, a2
+        return a1, a2, a3, a4
 
     def noun_qualifying_phrases(self, token, opt_item):
         if token.text.lower() == 'the':
@@ -223,5 +231,23 @@ class FeatureExtractionV2:
             for anc in token.ancestors:
                 if anc.text == opt_item[1] or token.text == opt_item[1]:
                     return True
+        return False
+    
+    def adjective_noun(self, token, opt_item):
+        if token.pos_ == 'NOUN' and token.dep_ == 'compound':
+            for anc in token.ancestors:
+                if token.text == opt_item[1] or anc.text == opt_item[1]:
+                    return True
+                else:
+                    break
+        return False
+    
+    def adjective_so(self, token, opt_item):
+        if token.text.lower() == 'so' and token.dep_ == 'advmod':
+            for anc in token.ancestors:
+                if token.text == opt_item[1] or anc.text == opt_item[1]:
+                    return True
+                else:
+                    break
         return False
     
