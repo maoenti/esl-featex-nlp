@@ -29,6 +29,8 @@ class FeatureExtractionV2:
         response['a4'] = False
         response['pre1'] = False
         response['pre2'] = False
+        response['con1'] = False
+        response['con2'] = False
 
         for token in doc:
             for opt in options:
@@ -92,7 +94,13 @@ class FeatureExtractionV2:
                     if not response['pre1']:
                         response['pre1'] = prep[0]
                     if not response['pre2']:
-                        response['pre2'] = prep[0]
+                        response['pre2'] = prep[1]
+
+                    conj = self.conjunctions(token, item)
+                    if not response['con1']:
+                        response['con1'] = conj[0]
+                    if not response['con2']:
+                        response['con2'] = conj[1]
         return response
     
     def main_verbs(self, token, opt_item):
@@ -280,6 +288,21 @@ class FeatureExtractionV2:
         elif token.text.lower() == 'because' and token.dep_ == 'prep':
             for child in token.children:
                 if token.text == opt_item[1] or child.text == opt_item[1]:
+                    return True
+        return False
+    
+    def conjunctions(self, token, opt_item):
+        con1 = False
+        con2 = self.future_result(token, opt_item)
+        if token.tag_ == 'CC' and token.text == opt_item[1]:
+            con1 = True
+
+        return con1, con2
+
+    def future_result(self, token, opt_item):
+        if token.text.lower() == 'when' and token.pos_ == 'SCONJ':
+            for anc in token.ancestors:
+                if token.text == opt_item[1] or anc.text == opt_item[1]:
                     return True
         return False
     
