@@ -31,6 +31,7 @@ class FeatureExtractionV2:
         response['pre2'] = False
         response['con1'] = False
         response['con2'] = False
+        response['sva'] = self.check_sva(doc)
 
         for token in doc:
             for opt in options:
@@ -306,3 +307,28 @@ class FeatureExtractionV2:
                     return True
         return False
     
+    def subject_verb_agreement(self, doc):
+        suggested_words = []
+        suggested_words_aux = []
+
+        for token in doc:
+            if token.dep_ == "nsubj":
+                for anc in token.ancestors:
+                    if anc.pos_ == "VERB" and anc.text not in suggested_words:
+                        suggested_words.append(anc.text)
+                        if len(list(anc.children)) != 0:
+                            for child in anc.children:
+                                if child.pos_ == "AUX" and child.text not in suggested_words_aux:
+                                    suggested_words_aux.append(child.text)
+        return suggested_words, suggested_words_aux
+    
+    def check_sva(self, doc):
+        suggested_words, suggested_words_aux = self.subject_verb_agreement(doc)
+        options = ['A', 'B', 'C', 'D']
+        sva = False
+        
+        for opt in options:
+            for item in self.data[opt]:
+                if item[1] in suggested_words or item[1] in suggested_words_aux:
+                    sva = True
+        return sva
