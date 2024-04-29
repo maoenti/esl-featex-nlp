@@ -27,8 +27,8 @@ class FeatureExtractionV2:
         response['a2'] = False
         response['a3'] = False
         response['a4'] = False
-        response['prep1'] = False
-        response['prep2'] = False
+        response['pre1'] = False
+        response['pre2'] = False
 
         for token in doc:
             for opt in options:
@@ -89,10 +89,10 @@ class FeatureExtractionV2:
                         response['a4'] = adj[3]
 
                     prep = self.prepositions(token, item)
-                    if not response['prep1']:
-                        response['prep1'] = prep[0]
-                    if not response['prep2']:
-                        response['prep2'] = prep[0]
+                    if not response['pre1']:
+                        response['pre1'] = prep[0]
+                    if not response['pre2']:
+                        response['pre2'] = prep[0]
         return response
     
     def main_verbs(self, token, opt_item):
@@ -260,10 +260,10 @@ class FeatureExtractionV2:
         return False
     
     def prepositions(self, token, opt_item):
-        prep1 = self.prep_addition(token, opt_item)
-        prep2 = self.prep_cause(token, opt_item)
+        pre1 = self.prep_addition(token, opt_item)
+        pre2 = self.prep_cause(token, opt_item)
 
-        return prep1, prep2
+        return pre1, pre2
 
     def prep_addition(self, token, opt_item):
         if token.text.lower() == 'besides' and token.dep_ == 'prep' and token.pos_ == 'SCONJ':
