@@ -35,8 +35,6 @@ def extract_features_v2(data, filename, nlp):
         response['con2'] = opt_deps['con2']
         response['sva'] = opt_deps['sva']
         extracted_features.append(response)
-        if response['sva']:
-            print(response)
-    # set_training_data(f'{filename}_features_v2', extracted_features)
+    set_training_data(f'{filename}_features_v2', extracted_features)
 
     return extracted_features
