@@ -27,6 +27,8 @@ class FeatureExtractionV2:
         response['a2'] = False
         response['a3'] = False
         response['a4'] = False
+        response['prep1'] = False
+        response['prep2'] = False
 
         for token in doc:
             for opt in options:
@@ -85,6 +87,12 @@ class FeatureExtractionV2:
                         response['a3'] = adj[2]
                     if not response['a4']:
                         response['a4'] = adj[3]
+
+                    prep = self.prepositions(token, item)
+                    if not response['prep1']:
+                        response['prep1'] = prep[0]
+                    if not response['prep2']:
+                        response['prep2'] = prep[0]
         return response
     
     def main_verbs(self, token, opt_item):
@@ -249,5 +257,29 @@ class FeatureExtractionV2:
                     return True
                 else:
                     break
+        return False
+    
+    def prepositions(self, token, opt_item):
+        prep1 = self.prep_addition(token, opt_item)
+        prep2 = self.prep_cause(token, opt_item)
+
+        return prep1, prep2
+
+    def prep_addition(self, token, opt_item):
+        if token.text.lower() == 'besides' and token.dep_ == 'prep' and token.pos_ == 'SCONJ':
+            for child in token.children:
+                if token.text == opt_item[1] or child.text == opt_item[1]:
+                    return True
+        return False
+    
+    def prep_cause(self, token, opt_item):
+        if token.text.lower() == 'because' and token.dep_ == 'mark':
+            for anc in token.ancestors:
+                if token.text == opt_item[1] or anc.text == opt_item[1]:
+                    return True
+        elif token.text.lower() == 'because' and token.dep_ == 'prep':
+            for child in token.children:
+                if token.text == opt_item[1] or child.text == opt_item[1]:
+                    return True
         return False
     

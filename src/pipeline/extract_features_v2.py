@@ -29,8 +29,10 @@ def extract_features_v2(data, filename, nlp):
         response['a2'] = opt_deps['a2']
         response['a3'] = opt_deps['a3']
         response['a4'] = opt_deps['a4']
+        response['prep1'] = opt_deps['prep1']
+        response['prep2'] = opt_deps['prep2']
         extracted_features.append(response)
-        if response['a4']:
+        if response['prep2']:
             print(response)
     # set_training_data(f'{filename}_features_v2', extracted_features)
 
