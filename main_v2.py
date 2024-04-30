@@ -8,6 +8,7 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--filename", help="Input file name in data/ folder (.csv)", required=True)
+parser.add_argument("--type", help="Input question type (snc/err)", required=True)
 try:
     args = parser.parse_args()
 except SystemExit:
@@ -15,11 +16,12 @@ except SystemExit:
     exit(1)
 
 filename = os.path.splitext(str(args.filename))[0]
+question_type = os.path.splitext(str(args.type))[0]
 nlp = spacy.load("en_core_web_sm")
 data = csv_to_json(filename)
 
 print('Start preprocessing...')
-preprocess = DataPreprocess(data, nlp, filename)
+preprocess = DataPreprocess(data, nlp, filename, question_type)
 preprocess.start()
 print('Done')
 

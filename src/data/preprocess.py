@@ -1,10 +1,11 @@
 from src.utils.file_handling import set_training_data
 
 class DataPreprocess():
-    def __init__(self, data, nlp, filename):
+    def __init__(self, data, nlp, filename, question_type):
         self.data = data
         self.nlp = nlp
         self.filename = filename
+        self.question_type = question_type
 
     def pos_tag(self, text):
         doc = self.nlp(text)
@@ -42,16 +43,24 @@ class DataPreprocess():
                     index += 1
 
         return underline, index
+    
+    def fill_sentence(self, question, key_answer_text):
+        filled_question = question.replace("...", key_answer_text)
+        print(filled_question)
+        return filled_question
 
     def start(self):
         options = ['A', 'B', 'C', 'D']
         counter = 0
         for data in self.data:
             data['id'] = counter
+            if self.question_type == 'snc':
+                data['question_text'] = self.fill_sentence(data['question_text'], data[data['key_answer']])
             data['pos_tag'] = self.pos_tag(data['question_text'])
             for opt in options:
                 data[opt] = self.pos_tag(data[opt])
-            self.get_underlines(data)
+            if self.question_type == 'err':
+                self.get_underlines(data)
             counter += 1
         set_training_data(f'{self.filename}_preprocessed', self.data)
         return self.data
