@@ -48,6 +48,7 @@ class DataPreprocess():
         counter = 0
         for data in self.data:
             data['id'] = counter
+            print(data['question_text'])
             data['pos_tag'] = self.pos_tag(data['question_text'])
             for opt in options:
                 data[opt] = self.pos_tag(data[opt])
