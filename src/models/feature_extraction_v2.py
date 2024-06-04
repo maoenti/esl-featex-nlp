@@ -145,7 +145,7 @@ class FeatureExtractionV2:
         return v4, v5
     
     def irregular_past(self, token, opt_item):
-        if token.tag_ == 'VBD' and token.text == opt_item[1]:
+        if token.tag_ == 'VBD' and token.text == opt_item[1] and token.endswith('ed'):
             return True
         return False
     
