@@ -1,7 +1,7 @@
 import json
 import csv
 
-with open('data/aryo_features_v2.json', 'r') as f:
+with open('data/question_bank_features_v2.json', 'r') as f:
     json_data = json.load(f)
 
 # row = [json_data[0]['question_text']] + list(json_data[0]['level2'].values())
