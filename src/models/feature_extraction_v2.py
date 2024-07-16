@@ -109,7 +109,7 @@ class FeatureExtractionV2:
         v2 = False
         v3 = False
 
-        if token.pos_ == 'VERB':
+        if token.tag_.startswith('VB'):
             v1 = self.is_main_verb(token, opt_item)
             if v1:
                 for child in token.children:
