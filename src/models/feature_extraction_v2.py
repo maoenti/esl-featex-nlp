@@ -281,7 +281,7 @@ class FeatureExtractionV2:
         pre1 = self.prep_addition(token, opt_item)
         pre2 = self.prep_cause(token, opt_item)
         pre3 = False
-        if (token.tag_ == 'TO' or token.tag_ == 'IN') or token.text == opt_item[1]:
+        if (token.tag_ == 'TO' or token.tag_ == 'IN') and token.text == opt_item[1]:
             pre3 = True
 
         return pre1, pre2, pre3
