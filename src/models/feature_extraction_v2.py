@@ -217,7 +217,7 @@ class FeatureExtractionV2:
     
     def nouns(self, token, opt_item):
         n1 = False
-        if token.pos_ == 'NOUN':
+        if token.pos_ == 'NOUN' and token.text == opt_item[1]:
             n1 = True
         n2 = self.infinitive_ing_subject(token, opt_item)
         n3 = self.nominal_that_clause(token, opt_item)
