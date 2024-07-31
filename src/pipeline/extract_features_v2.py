@@ -33,6 +33,7 @@ def extract_features_v2(data, filename, nlp):
         level3['a5'] = opt_deps['a5']
         level3['pre1'] = opt_deps['pre1']
         level3['pre2'] = opt_deps['pre2']
+        level3['pre3'] = opt_deps['pre3']
         level3['con1'] = opt_deps['con1']
         level3['con2'] = opt_deps['con2']
         level3['sva'] = opt_deps['sva']
@@ -55,7 +56,7 @@ def check_level2(data):
         "nouns": data.get("n1", False) or data.get("n2", False) or data.get("n3", False),
         "determiners": data.get("a1", False) or data.get("a2", False) or data.get("a5", False),
         "other_adjectives": data.get("a3", False) or data.get("a4", False),
-        "prepositions": data.get("pre1", False) or data.get("pre2", False),
+        "prepositions": data.get("pre1", False) or data.get("pre2", False) or data.get("pre3", False),
         "conjunctions": data.get("con1", False) or data.get("con2", False),
         "subject_verb_agreement": data.get("sva", False),
     }

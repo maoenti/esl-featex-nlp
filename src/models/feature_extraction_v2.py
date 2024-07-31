@@ -30,6 +30,7 @@ class FeatureExtractionV2:
         response['a5'] = False
         response['pre1'] = False
         response['pre2'] = False
+        response['pre3'] = False
         response['con1'] = False
         response['con2'] = False
         response['sva'] = self.check_sva(doc)
@@ -99,6 +100,8 @@ class FeatureExtractionV2:
                         response['pre1'] = prep[0]
                     if not response['pre2']:
                         response['pre2'] = prep[1]
+                    if not response['pre3']:
+                        response['pre3'] = prep[2]
 
                     conj = self.conjunctions(token, item)
                     if not response['con1']:
@@ -277,8 +280,11 @@ class FeatureExtractionV2:
     def prepositions(self, token, opt_item):
         pre1 = self.prep_addition(token, opt_item)
         pre2 = self.prep_cause(token, opt_item)
+        pre3 = False
+        if (token.tag_ == 'TO' or token.tag_ == 'IN') or token.text == opt_item[1]:
+            pre3 = True
 
-        return pre1, pre2
+        return pre1, pre2, pre3
 
     def prep_addition(self, token, opt_item):
         if token.text.lower() == 'besides' and token.dep_ == 'prep' and token.pos_ == 'SCONJ':
