@@ -27,6 +27,7 @@ class FeatureExtractionV2:
         response['a2'] = False
         response['a3'] = False
         response['a4'] = False
+        response['a5'] = False
         response['pre1'] = False
         response['pre2'] = False
         response['con1'] = False
@@ -90,6 +91,8 @@ class FeatureExtractionV2:
                         response['a3'] = adj[2]
                     if not response['a4']:
                         response['a4'] = adj[3]
+                    if not response['a5']:
+                        response['a5'] = adj[4]
 
                     prep = self.prepositions(token, item)
                     if not response['pre1']:
@@ -233,8 +236,11 @@ class FeatureExtractionV2:
         a2 = self.no_mean_not_any(token, opt_item)
         a3 = self.adjective_noun(token, opt_item)
         a4 = self.adjective_so(token, opt_item)
+        a5 = False
+        if token.tag_ == 'DT' and token.text == opt_item[1]: # Check Determiner
+            a5 = True
 
-        return a1, a2, a3, a4
+        return a1, a2, a3, a4, a5
 
     def noun_qualifying_phrases(self, token, opt_item):
         if token.text.lower() == 'the':
