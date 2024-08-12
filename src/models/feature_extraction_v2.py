@@ -202,7 +202,7 @@ class FeatureExtractionV2:
         return pro1, pro2, pro3
 
     def object_pronouns(self, token, opt_item):
-        if token.dep_ == 'pobj':
+        if token.dep_ == 'pobj' and token.tag_.startswith('PRP'):
             for anc in token.ancestors:
                 if anc.tag_ == 'IN' and (anc.text == opt_item[1] or token.text == opt_item[1]):
                     return True
