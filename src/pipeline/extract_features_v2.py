@@ -31,6 +31,7 @@ def extract_features_v2(data, filename, nlp):
         level3['a3'] = opt_deps['a3']
         level3['a4'] = opt_deps['a4']
         level3['a5'] = opt_deps['a5']
+        level3['a6'] = opt_deps['a6']
         level3['pre1'] = opt_deps['pre1']
         level3['pre2'] = opt_deps['pre2']
         level3['pre3'] = opt_deps['pre3']
