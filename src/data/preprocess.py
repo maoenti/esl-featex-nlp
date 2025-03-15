@@ -40,6 +40,8 @@ class DataPreprocess():
                         check += 1
                         break
                     index += 1
+                    if index == len(question):
+                        raise KeyError(f"The option \"{word[1]}\" is not found in the question.")
 
         return underline, index
 
